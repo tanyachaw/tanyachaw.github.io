@@ -10,16 +10,20 @@
     </head>
 
     <style>
-        #photo {
-            margin-left:117px;
-            position:absolute;;
-            width:300px;
-            margin-top:75px;
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
         }
     </style>
 
     <body>
-        <img src="0001.jpg" alt="nyc"> 
+        <div class="imgbox">
+            <img class="center-fit" src='0001.jpg'>
     </body>
 
 </html>
