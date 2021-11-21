@@ -12,21 +12,15 @@
     <style>
 
         body {
-            overflow: hidden;
+            /* overflow:hidden; */
         }
 
-        .map {
-            height:1200px;
-            margin-left:500px;
-            margin-top:-320px;
-            position:relative;
+        #map {
+            height:1250px;
         }
 
         #jad {
-            position: absolute;
             height:50px;
-            left:650px;
-            bottom:90px;
         }
 
         #heading {
@@ -39,22 +33,30 @@
             margin-bottom:0; padding-bottom:0;
         }
 
-        #water {
-            position:absolute;
-            height:300px;
+        div.relative {
+            position: relative;
             left:200px;
-            top:400px;
+            top:-330px;
         }
 
-    </style>
+        div.absolute {
+            position: absolute;
+            left:270px;
+            bottom:400px;
+        }
 
+
+    </style>
     <body>
         <p id="heading"> The finest<br>bathrooms of NYC.</p>
-        <p id="heading" style="font-size:15px; margin-top:0px; padding-top:0;"> (a very small sample size)</p>
-        <img src='0001.png' style="height:1500px; padding:0; margin:0; position:relative; top:-600px; left:300px;">
-        <!-- <img src="blue water.png" id="water"> -->
-        <img src='Jad.png' id="jad" style="margin:0;"> 
-        <!-- <img src='drawjad.png' id="jad"> -->
-    </body>
+        <p id="heading" style="font-size:15px; margin-top: 0; padding-top:0;"> (a very small sample size)</p>
 
+        <div class="relative">
+            <img src='0001.png' id = "map"> 
+            <div class="absolute">
+                <img src='Jad.png' id = "jad"> 
+            </div>
+        </div>
+
+    </body>
 </html>
