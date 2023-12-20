@@ -9,23 +9,109 @@
         body {
             text-align: center;
             margin: 0;
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
         }   
 
-        img {
-            max-width: 100%;
+
+        header {
+            text-align: center;
+            padding-top: 40px; 
+        }
+
+        img { /* Set your desired minimum width */
+            max-width: 400px;
             height: auto;
+            top: 30px;
+        }
+
+        .image-container {
+            max-width: 400px; /* Adjust as needed */
+            margin: 20px auto; /* Center the container and add spacing */
+        }
+
+        .overlay-images {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .overlay-images a {
+            position: absolute;
+            display: block;
+        }
+
+        .overlay-images img {
+            width: 100%; /* Ensure images take up the entire anchor */
+        }
+
+        /* Set specific positions for each image */
+        .overlay-images a:nth-child(1) { /* writing */
+            top: -20px;
+            right: 10px;
+            width: 120px;
+        }
+
+        .overlay-images a:nth-child(2) { /* work */
+            top: 140px;
+            left: -100px;
+            width: 100px;
+        }
+
+        .overlay-images a:nth-child(3) { /* about */
+            top: 60px;
+            right: -120px;
+            width: 100px;
+        }
+
+        .currently-image {
+            max-width: 250px; /* Adjust as needed */
+            margin-top: -30px;
+        }
+
+        .orange-ball-image {
+            max-width: 400px;
+            margin-top: 50px;
         }
    </style>
 
 </head>
 <body>
-    <img src="header.png" alt="Tanya Chawla">
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img src="header.jpg" alt="Tanya Chawla">
+        </a>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img class="currently-image" src="currently.jpg" alt="Currently Image">
+        </div>       
+
+        <div class="image-container">
+            <img class="orange-ball-image" src="orange ball.jpg" alt="Orange Ball Image">
+            <div class="overlay-images">
+                <a href="link-for-writing-image">
+                    <img src="writing.png" alt="Writing Image">
+                </a>
+                <a href="link-for-work-image">
+                    <img src="work.png" alt="Work Image">
+                </a>
+                <a href="about.html">
+                    <img src="about.png" alt="About Image">
+                </a>
+            </div>
+        </div>
+    
+    </main>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
 
 </body>
 </html>
