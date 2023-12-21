@@ -13,11 +13,14 @@
     
     <style>
         body {
+            display: flex;
+            flex-direction: column;
             text-align: center;
             margin: 0;
             background-color: #ffffff; /* White background */
             opacity: 0;
             transition: opacity 2s ease;
+            min-height: 100vh;
         }   
 
 
@@ -26,26 +29,14 @@
             padding-top: 40px; 
         }
 
+        main {
+            flex-grow: 1;
+        }
+
         img { 
             max-width: 400px;
             height: auto;
             top: 30px;
-        }
-
-        .headshot {
-            max-width: 200px;
-        }
-
-        .introduction{
-            margin-top: 20px;
-            margin-left: 400px; /* Set your desired left margin */
-            margin-right: 400px;
-            min-width: 200px; /* Set your desired minimum width */
-            max-width: 450px;
-            margin: 0 auto;
-            font-family: 'Zen Kaku Gothic New', sans-serif;
-            font-family: 'Jost', sans-serif;
-            font-family: 'DM Mono', monospace;
         }
 
         footer {
@@ -53,6 +44,12 @@
             margin-top: auto; /* This pushes the footer to the bottom */
             padding: 10px;
             font-size: 14px;
+        }
+
+        .under {
+            margin-top:25%;
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
         }
 
         .left, .right {
@@ -69,6 +66,8 @@
             margin-left: 50px;
         }
 
+
+
     </style>
 
  </head>
@@ -80,36 +79,12 @@
     </header>
 
     <main>
-        <img src="headshotborder.png" alt="A picture of me" width="250" height="auto" style="margin-top: 20px;">
-
-        <div class="introduction">
-            <p>
-                <br>
-                Hello! I'm an undergrad at UC Berkeley. My degree’s gonna say I majored in 
-                data science with an emphasis in evolution and
-                biodiversity, but some of my favorite classes have 
-                been in the history, math, music, and computer science 
-                departments (in that order). <br> <br>
-                I was born in New Delhi and mostly 
-                raised in California. 
-
-                I go through multiple different existential crises about 
-                who I am in a day, but a kid in a class I took once said 
-                that he wakes up, looks in the mirror, and repeats to himself 
-                “I am nothing, I am nothing, I am nothing.” I like that definition. <br> <br> 
-                
-                Sometimes I post what I eat 
-                <a href="https://www.instagram.com/tanyasdigest/" target="_blank">here</a>.
-                <br>
-                And tweet or X 
-                <a href="https://twitter.com/tanyachaw" target="_blank">here</a>.
-                <br>
-                 Get in touch at tanyachawla at berkeley dot edu. 
-                <br><br><br>
-            
-            </p>
+        <div class="under"> 
+            <p>Under construction!</p>
         </div>
     </main>
+    
+
 
     <footer>
         <div class="left"> 
