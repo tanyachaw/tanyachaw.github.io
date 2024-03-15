@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Chawla</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+            text-align: center;
+            padding-top: 40px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 400px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            padding-left: 400px; 
+            padding-right: 400px;
+            font-family: 'DM Mono', monospace;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+    </style>
+
+ </head>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img src="header.jpg" alt="Tanya Chawla">
+        </a>
+    </header>
+
+    <main>
+        <a href="writing.html"><img src="writing.png" alt="writing" width="110px"></a>
+        
+        <article>
+            <h2>Mechanism Design</h2>
+            <h4>3/14/24 (happy pi day)</h4>
+            <p>I am ridiculously caffeinated right now and have been spending my time - and by time I mean from 6pm-10pm on a Wednesday and 10:22am - 5pm on a Thursday - <a href="https://jeffely.com/teaching/">here</a> - watching Jeff Ely of Northwestern to try and give a shot at passing a midterm worth 40% of my grade. 
+                Who knows if I’ll pass. But I’ve spent about 10.5 hours of my life thinking about mechanism design and social choice problems so I thought I’d write about it. <br><br>
+                
+                This class is called intro to mathematical economics, which gave me nothing. Turns out it’s a mechanism design theory course with a bunch of math. They need to rename it. <br><br>
+
+                Anyway, here's a shot at explaining it.  <br><br>
+                
+                If I go into what economics actually is, I’ll end up going down a rabbit hole of history and coming to the conclusion that there’s no widely accepted 
+                definition of economics (like any subject). Take computer science. What’s the science? What is a 
+                computer? At what point does something stop being a computer? And is it really the study of computers 
+                or more so just applied math using computers? And math, my god, probably has the most beautiful/poetic 
+                <a href="https://en.wikipedia.org/wiki/Definitions_of_mathematics">set of definitions</a> of all - “All is number. Number rules the universe," Pythogoras said. Everything - this screen, audio files, coffee cups, napkins, can be expressed using math - just with different measurements or my fave, 0s and 1s. 
+                <br><br>
+
+                Here are some definitions though:<br>
+                1. Lionel Robbin: ​​“the science which studies human behavior as a relationship between ends and scarce means which have alternative uses.”<br>
+                2. Adam Smith: “the science of wealth.”<br><br>
+                
+                Regardless of a standard definition, for simplicity, I understand it as the study of human choices and their outcomes. It has two branches: positive economics, which focuses on what the economy is and normative economics, which focuses on what the economy should be, which is where mechanism design comes in.  
+                <br><br>
+                
+                <div style="text-align: center;">
+                    <img src="IMG_0704.jpg" alt="positive and normative economics"><br><br>
+                </div>
+
+                Eric Maskin, a professor at Harvard, won the Nobel Prize in 2007 for his work on mechanism design. He defines it as the engineering side of economics. It asks what outcomes we want and works backwards to figure out what mechanisms, or systems, best help achieve them. 
+                <br><br>
+                Ok fantastic, now to this course.
+                <br><br>
+                Here’s our problem:
+                <br><br>
+                We have a good. We wanna give it to someone. There are several people who want it. Our goal is to give it to the person who wants it the most. How do we do that?
+                <br><br>
+                My first reaction is to make ‘em compete in some challenge. Winner takes the good. But that doesn’t ensure that the winner wanted the good the most - it just means they won the challenge. So this mechanism fails. Let’s call this <i>mechanism 1</i>. 
+                <br><br>
+                <i>Mechanism 2</i>: <br>
+                Just ask them how much they value the good. Give it to the person with the most value. Reasonable, but fails because how do we know that they’re telling the truth? They have an incentive to exaggerate their value to get the good, so it’s not guaranteed that it’ll go to the person who truly wants it the most. 
+                <br><br>
+                <i>Mechanism 3</i>: <br>
+                Alright um, so we don’t want them to exaggerate, let’s then set up a bidding system. We’ll give each person a paper and tell them to write down how much they’re willing to pay and then make them put their money where their mouth is, i.e. they need to pay the amount they wrote down.
+                Great, but here’s the thing, they’re likely to underreport. Say I was told to put down how much I would pay for a cup of coffee, and I valued it to be worth five dollars. If I put down five dollars on the paper and end up winning, my satisfaction is nil. And in economic or mathematical terms, my net benefit is 0. So I’ll most likely put down 4 dollars and if I win I’ll get the coffee and a $1 profit. So this fails too… we need to get them to tell the truth. 
+                <br><br>
+                I wanna pause here and say, what a cool problem. Econ is busy trying to design a system to get the participants to tell the truth. All of this assumes that humans know what truth is, which is a <a href="https://plato.stanford.edu/entries/truth/">wonderfully thorny</a> subject, what their truth is, and that humans are completely rational beings (false). I doubt most or all of those assumptions are true, but then again, what is the truth? Let’s just simplify our lives and assume there is a truth, each human knows their own truth, and they are going to act rationally. 
+                <br><br>
+                Alright here’s the bread and butter blow-your-mind solution to this problem. This guy, or more like Nobel laureate William Vickrey, came up with it.
+                <br><br>
+
+                <div style="text-align: center; size: 20px">
+                    <img src="vickrey.png" alt="william vickrey" width="200"> 
+                </div>
+                <br><br>
+                
+                <i>Mechanism 4</i>: <br>
+                Ask everyone to write their value on a piece of paper, but tell them that the winner will not pay their own bid, but the second highest one. 
+                OKayyyy, so. Our first problem was participants exaggerating their price. They won’t do that because if the second highest bid is greater than their true value, then they can’t pay it. Our second problem was underreporting their price. They won’t do that because it’s basically guaranteed that the winner will receive some positive net benefit since they’re not paying their own price. Also, there’s risks to underbidding - they might lose the good. So their dominant strategy (game theory speak) is to tell the truth. Fanfuckingtastic. 
+                <br><br>
+                This is pretty much the core of the class. The rest of this is gonna be going in the weeds a bit based on Jeff Ely's course. Here’s more of a highlight reel of results. 
+                <br>
+                <h3>Welfare economics</h3>
+                (Jesus christ there are so many subfields and sub-branches of econ - micro, macro, positive, normative, welfare, managerial etc.) <br><br>
+                
+                The goal of welfare economics, courtesy Jeff Ely, is devising a standard to judge economic outcomes as good or bad.<br><br>
+                
+                The question is, given a group of people with different preferences about a decision, how do we make an aggregate decision for all of the people in the economy? Well we can make any decision really, but let’s base it off of three principles. 
+                <br><br>
+                If everyone thinks one choice is better than another, then our ranking of the choices should reflect that. If our group is, say, a class of third graders, and everyone believes that chocolate milk is better than regular milk, they should get chocolate milk. However, unanimity is kinda rare. This is called the <i>Pareto principle</i> and it’s named after a fantastically-named Italian dude, Vilfredo Pareto. <br><br>
+                <i>No dictatorships.</i> If one third grader named Fred believes that normal milk is better than chocolate milk, and our decision is based only on what Fred thinks, Fred’s a dictator! We can’t have Fred make the decision for everyone. (This milk example is probably because I’ve developed lactose intolerance and miss milk every day.)<br><br>
+                Lastly, the rankings of two alternatives should not depend on a third. Say we conclude that chocolate milk is in fact better than regular milk. Then we introduce soy milk to the mix and now the rankings become from worst to best, chocolate milk, soy milk, regular milk. The addition of soy milk switched up the ranks of chocolate and regular milk, making their rank dependent on it. This can’t happen! Formally this is called <i>independence of irrelevant alternatives (IIA).</i><br><br> 
+                
+                There’s two more prof Ely didn’t talk about:<br><br> 
+                
+                <i>Universal Domain:</i> Voting must account for everyone’s preferences.<br><br> 
+                <i>Social Ordering:</i> Each individual should be able to order the choices in any way and indicate ties.<br><br> 
+                
+                I gotta be honest I don’t totally understand universal domain and social ordering, but there they are. <br><br> 
+                
+                Now now now, here is la catch - Nobel laureate Kenneth Arrow proved that IT IS A MATHEMATICAL IMPOSSIBILITY to make an aggregate decision that fulfills all these principles. And he proved it while he was a grad student which is just even more cool. 
+                <br><br> 
+                Formally, Arrow’s Theorem: Suppose there are more than two alternatives. Then no social welfare function satisfies Universal domain, social ordering, pareto efficiency, no dictatorship, and IIA. See more <a href="https://plato.stanford.edu/entries/arrows-theorem/#TheCon">here.</a>
+                We could just end the conversation here. But instead we adaptable humans agree to drop a principle. So we drop universal domain and instead say that our social welfare function (SWF) only applies in situations where there’s a valid measure of welfare. In this class, that measure is money or someone’s maximum willing to pay (WTP)
+                <br><br> 
+                Two definitions coming your way:<br><br> 
+                Utilitarianism is finding the outcome that maximizes social value. <br><br> 
+                An outcome is Pareto efficient (also named after Vilfredo Pareto) if there’s no other outcome that everyone believes is better. 
+                <br><br> 
+                An outcome may not be both utilitarian and pareto efficient, but here’s a dandy result: when monetary transfers are possible, i.e. when money is involved, the utilitarian and pareto efficient outcome is the same. 
+                <br><br> 
+               
+                An ideal economic system is efficient, ensures that everyone in it tells the truth (incentive compatible), and is budget-balanced i.e. the amount of money buyers pay equals the seller’s cost. 
+                <br><br> 
+
+                <div style="text-align: center;">
+                    <img src="IMG_0705.jpg" alt="ideal economic system" width="400">
+                </div>
+                <br>
+                
+                Yet here’s another one of those Arrow’s-theorem-esque-showstopper-but-also-disappointing results: there’s no one mechanism that can solve all those problems. <br><br> 
+                There’s always a tradeoff between efficiency and incentives in the world. <br><br> 
+                
+                So we come to the conclusion that there’s no way to efficiently provide public goods. Sad.<br><br> 
+                
+                What about private goods? Here’s where markets come in and this result is pretty sweet. <br><br> 
+                
+                In a market, there are buyers and sellers. Let’s establish that any trade between a buyer and a seller is efficient when the buyer’s willingness to pay exceeds the seller’s opportunity cost. <br><br> 
+                
+                Yet here’s the issue with lying humans: the incentive problem. The seller is incentivized to overreport their opportunity cost. And the buyer is incentivized to underreport their willingness to pay. <br><br> 
+                
+                Problem: How can we extract the TRUTH? Or how can we extract the buyer’s true WTP and the seller’s true OC?<br><br> 
+                
+                In order for the buyer to truthfully tell us their WTP, the payment they actually pay cannot depend on what they state as their WTP. There’s a pattern here. In order for humans to tell the truth, the action they are expected to take should not be their truth. You can’t make people put their money where their mouth is. They won’t. Solid. 
+                <br><br> 
+
+                The price that the buyer pays and the seller receives has to be independent of the buyer’s WTP and the seller’s opportunity cost. 
+                <br><br> 
+                Turns out market forces does this. Result: the institution that solves this problem is a market. 
+                <br><br> 
+                The mechanism:<br>
+                The price at which trade happens is set by market forces<br>
+                Just have each buyer and seller say yes or no to the price<br><br> 
+                
+                It’s inefficient though, because it may be that the buyer’s WTP is greater than the seller’s OC but less than the price fixed by the market, but it’s the best we can do. 
+                <br><br> 
+                So we just said that markets are inefficient, which goes against the invisible hand, another super cool concept that says that self interested people will act for the public interest in a free market (Adam Smith). 
+                <br><br> 
+                But, we’re gonna see that competitive markets (THAT’S RIGHT, GOOD OL’ COMPETITION) bring us closer and closer to the invisible hand ideal. 
+                <br><br> 
+                A thin market exacerbates incentive or truth-telling problems. Competition among buyers and sellers can help with the incentive problem, so a thick market has more trade and will incentivize folks to tell the truth. So again, more competition is good for da economy. Swag we just built up to the shit they teach as a fundamental in an intro to econ class. 
+                <br><br> 
+                Here’s the mechanism (formally):<br>
+                1. Allow all buyers to announce their values and all sellers to announce their costs. <br>
+                2. See how many units can be sold by counting how many buyers’ values are above the opportunity cost of some seller.<br>
+                3. That’s the number we’d like to sell exactly so that the market clears. But we’re gonna sell one unit less than that. <br>
+                4. So if we can trade m + 1 units, we’re going to sell m units. Now how are we going to determine the price for these m units?<br>
+                5. Find the buyer whose WTP is m + 1st highest WTP. That’s the price. We’ve solved the incentive problem of buyers.<br>
+                6. All sellers will receive the m + 1st lowest cost. We’ve solved the incentive problem of sellers.<br><br>
+                This entire mechanism has just 1 unit of inefficiency, namely the m + 1st unit we didn’t sell. But in the long scope of things, that doesn’t really matter that much.<br><br>
+
+                Alright that's it for now. I'll write more if I actually get the class more. <br><br>
+                </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
