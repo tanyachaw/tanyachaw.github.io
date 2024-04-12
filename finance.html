@@ -96,6 +96,11 @@
             }
         }
 
+
+        .iframe-container iframe {
+            display: block;
+            margin-left: -200px; /* Adjust the value as needed */
+        }
     </style>
 
  </head>
@@ -107,38 +112,45 @@
     </header>
 
     <main>
-        <a href="writing"><img src="writing.png" alt="writing" width="110px"></a>
         
         <article>
             <h2>Personal finance spiels</h2>
-            <h4>4/10/24</h4>
+            <h4>4/12/24</h4>
 
-            <p>Somehow books on money have popped up in my life. I’m embarrassed to write this but I read 
-                Ramit Sethi’s <a href='https://www.amazon.com/Will-Teach-You-Be-Rich/dp/0761147489'>‘I Will Teach You To Be Rich.’</a> I saw it in the library catalog and it looked 
+            <p>I'm supposed to be doing data 102 homework right now.
+                Somehow books on money have popped up in my life. I’m embarrassed to write this but I started reading the 
+                Ramit Sethi <a href='https://www.amazon.com/Will-Teach-You-Be-Rich/dp/0761147489'>book</a>. I saw it in the library catalog and it looked 
                 like something I <i>should</i> read, so I did. 
                 <br><br>
-                This is a breakdown of his spending plan:
-                <br><br>
-                Fixed costs are 50-60% of take home pay. This is rent, utilities, transportation, groceries, internet.  
+
+                What I took away:<br>
+                1. Get another credit card.<br>
+                2. Stop using Bank of America and Wells Fargo.<br>
+                3. Get a checking account and a savings account preferably in separate banks.<br>
+                4. Automate money transfers so that every month, a little goes from your checking account to your savings and Roth IRA.
                 <br>
-                Investments are 10%. <br>
-                Savings goals are 5-10%. Vacations, gifts, house down payments (lmao), emergency funds. 
-                <br>
-                Lifestyle and spending are 20-35%. Restaurants, clothes, a gym membership, yoga classes, groceries, race money, concert tickets etc. 
-                <br><br>
-                I wanted to find out my expense breakdown currently. Wells Fargo only gives 
-                you a csv of the past 120 days of your purchases, which means this is data from 
-                December 21st 2023 to April 7th 2024. It’s not exactly accurate because I’m in a 
-                really privileged position regarding finances at the moment, but I'll still look 
-                at what I ordinarily spend money on. And how much. (You can scroll inside the jupyter notebook.)
+                5. Get a Roth IRA.<br>
+                6. Figure out what your spending habits are like.<br><br>
+
+                
+                I wanted to figure out what my spending habits were like last year, and as much as Ramit Sethi hates
+                Wells Fargo, they gave me a whole csv for my 2023 spending that was well-organized and easy to work with. 
                 <br>
             </p>
 
             
-            <iframe src="Personal finance.html" width="650" height="5970" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="2023expenses.html" width="1000" height="12520" frameborder="0"></iframe>
+            </div>
 
             <p>
-                Alright
+                I had a lot of fun doing this although the visualizations aren't great. I wanna learn 
+                better (prettier) techniques to model data like this beautiful 
+                <a href="https://www.deniselu.com/sandbox/pavement-1933-2023/">project</a> from 
+                <a href="https://www.deniselu.com/">Denise Lu</a>. <br><br>
+                All of that to say, I opened a Roth IRA and a savings account. Don't read Ramit Sethi. <br><br>
+
+
             </p>
 
         </article>
