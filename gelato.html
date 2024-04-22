@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Chawla</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: white; /* Set background color to black */
+            color: black; /* Set text color to white */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+            text-align: center;
+            padding-top: 40px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 400px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            padding-left: 400px; 
+            padding-right: 400px;
+            font-family: 'DM Mono', monospace;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+    </style>
+
+ </head>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img src="header.jpg" alt="Tanya Chawla">
+        </a>
+    </header>
+
+    <main>
+        
+        <article>
+            <h2>Gelato</h2>
+            <p>
+                I've self-diagnosed myself as lactose intolerant, although I might actually be lactose sensitive because
+                my symptoms aren't crazy.
+                My stomach gets all bloated and I walk around in minor discomfort. Regardless, I ignore this lactose
+                sensitivity for gelato. <br><br>
+
+                My love for gelato began in Berkeley. I just had dinner with a friend and was walking home. It was a great 
+                evening and I saw Caravaggio. I never planned on going in but I did, and got a hazelnut and pistachio number. I ate it
+                walking home and it somehow changed my life. Something about being alone and buying gelato for yourself, like you 
+                are a child, was magic. <br><br>
+
+                I had similar moments with gelato afterwards. In Manhattan, I had gelato after a documentary screening and just sat
+                outside, on a bench, looking at people. Then I had the best gelato of my life a few blocks away a couple weeks later. 
+                Then I had gelato in Goa where I saw Arshad Warsi and what was again, one of the best gelatos of my life.
+            
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
