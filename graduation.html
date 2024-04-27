@@ -18,11 +18,12 @@
             flex-direction: column;
             text-align: center;
             margin: 0;
-            background-color: black; /* Set background color to black */
+            background-color: cornflowerblue; /* Set background color to black */
             color: white; /* Set text color to white */
             opacity: 0;
             transition: opacity 2s ease;
             min-height: 100vh;
+            cursor: url('bear.png'), auto;
         }   
 
 
@@ -35,11 +36,7 @@
             flex-grow: 1;
         }
 
-        img { 
-            max-width: 400px;
-            height: auto;
-            top: 30px;
-        }
+
 
         footer {
             font-family: 'DM Mono', monospace;
@@ -83,6 +80,7 @@
 
         h2 {
             text-align: center;
+            color: rgb(255, 183, 0);
         }
 
         h4 {
@@ -98,7 +96,7 @@
         }
 
         a {
-            color: lightblue;
+            color: lightyellow;
         }
 
         .pics{
@@ -107,20 +105,77 @@
             justify-content: center;
         }
 
+        .typing-animation {
+            font-size: 20px;
+            overflow: hidden; /* Ensures the text doesn't overflow its container */
+            border-right: .15em solid orange; /* Creates the typing cursor effect */
+            white-space: nowrap; /* Prevents line breaks */
+            margin: 0 auto; /* Centers the text horizontally */
+            animation: typing 2s steps(20, start) infinite; /* Animation settings */
+        }
+
+        @keyframes typing {
+            from { width: 0 } /* Starts with no width (invisible) */
+            to { width: 40% } /* Ends with full width (fully visible) */
+        }
+
+        .container {
+            position: relative;
+            width: 150px; /* Adjust according to your image size */
+        }
+
+            .image-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .image-container img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                opacity: 0;
+                transition: opacity 0.3s ease; /* Smooth transition for opacity */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .overlay p {
+                color: white;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .image-container:hover .overlay {
+                opacity: 1; /* Show overlay when hovering over the image */
+            }
+
     </style>
 
  </head>
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img src="header-modified.jpg" alt="Tanya Chawla">
+            <img src="header white.png" alt="Tanya Chawla" width="400px">
         </a>
     </header>
 
     <main>
         
         <article>
-            <h2>Graduation</h2>
+            <div class="typing-animation">
+                <h2>Graduation</h2>
+            </div>
+            
             <h4>5/11/24</h4>
             <p>
                 After four years of sheer tumult, I graduated. I took FIVE final exams last week. FIVE. And the last 
@@ -132,14 +187,15 @@
                 Several professors touched my life deeply. I told some of them, I didn’t tell others. <br><br>
 
                 I made friends, found myself, lost myself, lost friends, made acquaintances, lost acquaintances, 
-                found myself again, I think.<br><br>
+                found myself again, I think. 
+                <br><br>
 
                 Before committing, I saw an article that said this school 
                 will beat the shit out of you but you’ll come out more resilient. It's true, although I 
                 can't confirm the resilient part yet. 
                 This <i>Little Miss Sunshine</i> quote comes to mind. Here's the <a href="https://youtu.be/7VbYokM9dY4?si=xM9aFo6eh6WRmz_B">scene</a>. <br> <br>
 
-
+                <span style="color: lightyellow;"> 
                 <i> Dwayne: I wish I could just sleep until I was eighteen and skip all this crap - high school and 
                     everything - just skip it. <br><br>
                     Frank: Do you know who Marcel Proust is? <br><br>
@@ -153,84 +209,234 @@
                     until you're 18... Ah, think of the suffering you're gonna miss. I mean high school? High 
                     school - those are your prime suffering years. You don't get better suffering than that.<br><br>
                 </i>
-
+            </span>
                 Here are some things I’ll miss. <br><br>
 
                 Berkeley <a href="https://sociology.berkeley.edu/sites/default/files/documents/student_services/undergrads/Berkeley%20Time.pdf">time</a> <br><br>
+                
                 North Berkeley<br><br>
-                <img src="me2.jpg" width="150px"> 
-                <img src="hilgard.jpg" width="150px">
-                <img src="northberk.PNG" width="150px">
-                <img src="northberk2.jpg" width="154px">
+                <div class="image-container">
+                    <img src="me2.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Diwali? I think? Roommate took a picture like I was in elementary school. :)</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="hilgard.jpg" width="150px">
+                    <div class="overlay">
+                        <p>First apartment. The lady in the apartment below used to blast Backstreet Boys on repeat.
+                            Also, no hot water unless everyone in the building showers at the same time. 
+                        </p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="northberk.PNG" width="145px">
+                    <div class="overlay">
+                        <p>Used to see this Hafiz poem while running.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="northberk2.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Fall in Northside.</p>
+                    </div>
+                </div>
+
                 <br><br>
                 The rays of sun in Doe<br><br>
+                
                 Cheeseboard pizza - the only pizza I will forget about my lactose intolerance for<br><br>
-                This bench<br><br>
-                The main stacks DS section<br>
 
-                <div class="pics">
-                    <img src="congress.jpg" width="150px">
-                    <img src="indiatoday.jpg" width="150px">
-                    <img src="pakbook.jpg" width="150px">
-                    <img src="manto.jpg" width="150px">
-                    <img src="nehru.jpg" width="150px">
-                    <img src="hindistories.jpg" width="150px">
-                    <img src="jinnah.jpg" width="150px">
-                    <img src="me.jpg" width="150px">
+                <div class="image-container">
+                    <img src="pizza.PNG" width="150px">
+                    <div class="overlay">
+                        <p>LOTS of memories here. The best pizza is undoubtedly the crushed tomato ricotta red bell pepper one.</p>
+                    </div>
                 </div>
-                <br>
+ 
+                <br><br>
+                This bench<br><br>
+                The main stacks DS section<br><br>
+                    <div class="image-container">
+                        <img src="congress.jpg" width="150px">
+                        <div class="overlay">
+                            <p>Indian history congress!</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="indiatoday.jpg" width="150px">
+                        <div class="overlay">
+                            <p>Walls on walls of India Today.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="pakbook.jpg" width="150px">
+                        <div class="overlay">
+                            <p>Pakistan decorates their books like their trucks.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="manto.jpg" width="150px">
+                        <div class="overlay">
+                            <p>king</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="nehru.jpg" width="150px">
+                        <div class="overlay">
+                            <p>Another king</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="hindistories.jpg" width="150px">
+                        <div class="overlay">
+                            <p>mein hans nai padhta? huh?</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="jinnah.jpg" width="150px">
+                        <div class="overlay">
+                            <p>Jinnah</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="me.jpg" width="150px">
+                        <div class="overlay">
+                            <p>moi</p>
+                        </div>
+                    </div>
+                <br><br>
 
                 Moffit in the morning<br><br>
-                <div class="pics">
-                    <img src="moffit.jpg" width="150px">
-                </div>
-                <br>
-                Strada<br><br>
-                This book box where I got the NYT every morning<br><br>
-                <img src="bookbox.jpg" width="150px">
-                <br><br>
-                This set of stairs that I ran up every morning<br><br>
+                
 
-                <div class="pics">
-                    <img src="stairs.png" width="150px">
+                <div class="image-container">
+                    <img src="moffit.jpg" width = "150px">
+                    <div class="overlay">
+                        <p>best seat even though I hate this library</p>
+                    </div>
                 </div>
-                <br>
+                
+                <br><br>
+
+                Strada<br><br>
+                This book box where I got the NYT<br><br>
+
+                <div class="image-container">
+                    <img src="bookbox.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Also got the brother's karamazov and a lot of new yorker magazines.</p>
+                    </div>
+                </div>
+                <br><br>
+                This set of stairs<br><br>
+
+                <div class="image-container">
+                    <img src="stairs.png" width="150px">
+                    <div class="overlay">
+                        <p>Ran up here everyday of junior year.</p>
+                    </div>
+                </div>
+                <br><br>
 
                 The RSF; my dear, sometimes disgusting, RSF<br><br>
                 My email account <br><br>
+                <div class="image-container">
+                    <img src="email.png" width="630px"> 
+                    <div class="overlay">
+                        <p>wtf</p>
+                    </div>
+                </div>
+               
+                <br><br>
                 Looking at people be. I saw a girl riding her skateboard with her arms 
                 flailing down a hill in near Grizzly Peak once
                 and she looked like the most free person on the planet. Or how the sun 
                 pulls everyone out on the glade. I'll miss how much authencity is unquestionably accepted here.
-                The weirder you are the better.<br><br>
+                <br><br>
 
-                <img src="cheeseboard.jpg" width="150px">
-                <img src="glade.jpg" width="150px">
-                <img src="climbing.jpg" width="150px">
-                <img src="morning.jpg" width="150px">
+                <div class="image-container">
+                    <img src="cheeseboard.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Evenings in cheeseboard</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="glade.jpg" width="150px">
+                    <div class="overlay">
+                        <p>The glade! in the sun!</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="climbing.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Mosaic</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="morning.jpg" width="150px">
+                    <div class="overlay">
+                        <p>The first time the sun came out in a while</p>
+                    </div>
+                </div>
 
                 <br><br>
                 All the little pieces - a street sign, a cafe, a table, a step that’s crooked and 
                 leans out of the concrete, a locker, an outlet, a painting, a window I always looked at - 
                 that come together to form something close to home. I’ll miss all of those. <br><br>
 
-                <div class="pics">
+                <div class="image-container">
                     <img src="cafe.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Music cafe</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="FAVA.jpg" width="150px">
-                    
+                    <div class="overlay">
+                        <p>FAVA</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="americano.jpg" width="150px">
+                    <div class="overlay">
+                        <p>3.70 americanos that taste like shit but do the job</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="berkeleybowl.jpg" width="150px">
-                   
+                    <div class="overlay">
+                        <p>THE BERKELEY BOWL!</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="campanile.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Campanile</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="concert1.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Folk concert</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="concert2.jpg" width="150px">
+                    <div class="overlay">
+                        <p>Kabir concert</p>
+                    </div>
+                </div>
+                <div class="image-container">
                     <img src="flower.jpg" width="150px">
-                    
+                    <div class="overlay">
+                        <p>:)</p>
+                    </div>
                 </div>
                 
+                <br><br>
 
-                To many more prime suffering years. Go bears.
-
+                To many more prime suffering years. <span style="color: rgb(255, 183, 0);">Go bears.</span>
             </p>
         </article>
     </main>
