@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>writing</title>
+    <title>Every run club in nyc</title>
 
     <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             display: flex;
             flex-direction: column;
             text-align: center;
             margin: 0;
-            background-color: #ffffff; /* White background */
+            background-color: white; /* Set background color to black */
+            color: black; /* Set text color to white */
             opacity: 0;
             transition: opacity 2s ease;
             min-height: 100vh;
@@ -46,6 +48,17 @@
             font-size: 14px;
         }
 
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
         .left, .right {
             display: inline-block;
         }
@@ -60,17 +73,40 @@
             margin-left: 50px;
         }
 
-        p {
+        article {
+            padding-left: 400px; 
+            padding-right: 400px;
             font-family: 'DM Mono', monospace;
-            padding-top: 20px;
+            font-size: 14px;
+            text-align: left;
         }
 
-        p a {
-            display: block;
-            margin-bottom: 10px; 
-         }
+        h2 {
+            text-align: center;
+        }
 
+        h4 {
+            text-align: center;
+        }
 
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .image-container {
+                position: relative;
+                display: inline-block;
+            }
+
+        .image-container img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
 
     </style>
 
@@ -78,29 +114,31 @@
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img src="header.jpg" alt="Tanya Chawla">
+            <!-- <img src="header.jpg" alt="Tanya Chawla"> -->
         </a>
     </header>
 
     <main>
-        <!-- <a href="writing"><img src="writing.png" alt="writing" width="110px"></a> -->
-            <p>
-                <i style="font-size: 15px;">Working on making these small-screen friendly.</i><br><br>
-                
-                <a href="graduation">Graduation</a>
-                <a href="finance">Personal finance spiel</a> 
-                <a href="22">22 things learned at (almost) 22</a> 
-                <a href="cycles">The menstrual cycle</a>
-                <a href="mechanism">Mechanism design</a>
-            </p>
-            
+        <article>
+
+        <div class="image-container">
+            <img src="runclub.jpg" height="700px">
+        </div>    
+
+        <p style="text-align: center;">
+            I'm moving to nyc soon... which means I'm gonna scour all the run 
+            clubs the city has to offer.
+        </p>
+
+        </article>
+
     </main>
     
 
 
     <footer>
         <div class="left"> 
-            &copy; 2024 Tanya Chawla
+            &copy; 2024 <a href="tanyachawla.com">Tanya Chawla</a>
         </div>
 
         <div class="right">
