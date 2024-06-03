@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On documentaries</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: white; /* Set background color to black */
+            color: black; /* Set text color to white */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+            text-align: center;
+            padding-top: 40px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 400px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            padding-left: 400px; 
+            padding-right: 400px;
+            font-family: 'DM Mono', monospace;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+            display: flex; /* Change to flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-right: 60px;
+        }
+
+
+    </style>
+
+ </head>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <!-- <img src="header.jpg" alt="Tanya Chawla"> -->
+        </a>
+    </header>
+
+    <main>
+        <article>
+
+        <div class="image-container">
+            <img src="on documentaries.jpg" width="300px">
+        </div>  
+        
+        <br><br>
+
+        <p>
+            I've been speaking to documentary filmmakers on their process. Here are notes.
+            <br><br>
+            <a href="https://www.matthewbuschphoto.com/index/G0000KVTXerJm6GQ">Matthew Busch</a>
+            <br><br>
+            Matthew's a photographer, cinematographer, filmmaker, and journalist - the whole gamut. 
+            He's getting his masters from the Berkeley J-school in documentary film.
+            I saw Matthew's work at an India Reporting event during my last days at Cal. His documentary was about a 
+            man in Pushkar, Rajasthan who called himself the "Indian Deepfaker" because of his job creating AI content on 
+            behalf of politicians for the upcoming Indian election cycle.
+            <br><br>
+            The documentary was ridiculously good. Then I saw his work online which was also ridiculously good. 
+            His photos are raw, intimate, ethereal, almost unreal. 
+            His <a href="https://www.matthewbuschphoto.com/index/G0000RYPtmIr8F4w">portraits</a> of a 
+            Mandaean community in Texas are like paintings. There's one 
+            <a href="https://www.matthewbuschphoto.com/index/G0000uKa7e7y9rR8">picture</a> he took in Poland
+            of two couples kissing. You can feel the intimacy of the photo. And I was so baffled at how he managed to 
+            pull off being a fly on a wall during something like that.
+
+            <br><br>
+
+            I spoke with him a few weeks after. Here are a couple things we talked about.
+
+            <br><br>
+
+            <b>Build relationships with the people you're shooting.<b>
+            
+            <br><br>
+
+            This doesn't apply every time, but Matthew worked on the Mandaean project for over 5 years. 
+            He was curious about it and showed up one day to ask around. This community has been ostracized in the past,
+            so approaching them saying "hi I wanna take pictures of you for an amount of time" wasn't going to be effective.
+            Then he began very human work - cultivating trust and relationships. A lot of it is feeling it out, and eventually
+            asking them if you can take a photo of them. 
+
+            <br><br>
+
+            <b>People will say no, and that's fine.</b>
+
+        </p>
+
+        </article>
+
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 <a href="tanyachawla.com">Tanya Chawla</a>
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
