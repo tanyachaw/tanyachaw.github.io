@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d8b02b99ed810b81703b3a272751712d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d8b02b99ed810b81703b3a272751712d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d8b02b99ed810b81703b3a272751712d = L.map(
+                "map_d8b02b99ed810b81703b3a272751712d",
+                {
+                    center: [40.7061, -73.9969],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b238cb9103f3ed4977366a5dd1d77ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+            var circle_marker_3033bfd584f4f4ba8799c021aef4d678 = L.circleMarker(
+                [40.76805834, -73.98189999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_bdc6aad0c909d649769b61f607768d11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad7a53583caf3f80cc1423eafd6f28c4 = $(`<div id="html_ad7a53583caf3f80cc1423eafd6f28c4" style="width: 100.0%; height: 100.0%;"><b>No more lonely runs</b><br> <a href='https://www.instagram.com/nomorelonelyruns_'>https://www.instagram.com/nomorelonelyruns_</a><br> Wednesday evening, Saturday 8am</div>`)[0];
+            popup_bdc6aad0c909d649769b61f607768d11.setContent(html_ad7a53583caf3f80cc1423eafd6f28c4);
+        
+
+        circle_marker_3033bfd584f4f4ba8799c021aef4d678.bindPopup(popup_bdc6aad0c909d649769b61f607768d11)
+        ;
+
+        
+    
+    
+            var circle_marker_815b457df12aa5d1c83ac0187afada36 = L.circleMarker(
+                [40.74869296, -74.00998734],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_77392cfdd150a51ee8c836770df4101c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f4ab7b408d29209f2d4d9a486f021d7 = $(`<div id="html_3f4ab7b408d29209f2d4d9a486f021d7" style="width: 100.0%; height: 100.0%;"><b>No more lonely runs</b><br> <a href='https://www.instagram.com/nomorelonelyruns_'>https://www.instagram.com/nomorelonelyruns_</a><br> Wednesday evening, Saturday 8am</div>`)[0];
+            popup_77392cfdd150a51ee8c836770df4101c.setContent(html_3f4ab7b408d29209f2d4d9a486f021d7);
+        
+
+        circle_marker_815b457df12aa5d1c83ac0187afada36.bindPopup(popup_77392cfdd150a51ee8c836770df4101c)
+        ;
+
+        
+    
+    
+            var circle_marker_a9cb22e066a5b2916d51363cb32ab695 = L.circleMarker(
+                [40.72001218, -73.95165987],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_5e4aa5977746bc3652b2801d997abe28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54bcaee07282290a7f839da19664df0f = $(`<div id="html_54bcaee07282290a7f839da19664df0f" style="width: 100.0%; height: 100.0%;"><b>Brooklyn track club</b><br> <a href='https://www.brooklyntrackclub.org/'>https://www.brooklyntrackclub.org/</a><br> THis one looks intimidating BUT very appealing. Paid membership, they do track workouts and long runs.</div>`)[0];
+            popup_5e4aa5977746bc3652b2801d997abe28.setContent(html_54bcaee07282290a7f839da19664df0f);
+        
+
+        circle_marker_a9cb22e066a5b2916d51363cb32ab695.bindPopup(popup_5e4aa5977746bc3652b2801d997abe28)
+        ;
+
+        
+    
+    
+            var circle_marker_d2023b4413fb3e06c2b62b94336b813d = L.circleMarker(
+                [40.72189538, -73.97358426],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_f7de0c84f470221825796b2dc3d94161 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_155d39c596334e39a3109f63d5ed55c9 = $(`<div id="html_155d39c596334e39a3109f63d5ed55c9" style="width: 100.0%; height: 100.0%;"><b>Brooklyn track club</b><br> <a href='https://www.brooklyntrackclub.org/'>https://www.brooklyntrackclub.org/</a><br> THis one looks intimidating BUT very appealing. Paid membership, they do track workouts and long runs.</div>`)[0];
+            popup_f7de0c84f470221825796b2dc3d94161.setContent(html_155d39c596334e39a3109f63d5ed55c9);
+        
+
+        circle_marker_d2023b4413fb3e06c2b62b94336b813d.bindPopup(popup_f7de0c84f470221825796b2dc3d94161)
+        ;
+
+        
+    
+    
+            var circle_marker_b63c0a7dcb8672add84237581f2da280 = L.circleMarker(
+                [40.70306771, -73.99053542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_214e771bf05a5e6722a29cb64ae53096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d16c2d40e2afedff715530311749b1f1 = $(`<div id="html_d16c2d40e2afedff715530311749b1f1" style="width: 100.0%; height: 100.0%;"><b>Brooklyn track club</b><br> <a href='https://www.brooklyntrackclub.org/'>https://www.brooklyntrackclub.org/</a><br> THis one looks intimidating BUT very appealing. Paid membership, they do track workouts and long runs.</div>`)[0];
+            popup_214e771bf05a5e6722a29cb64ae53096.setContent(html_d16c2d40e2afedff715530311749b1f1);
+        
+
+        circle_marker_b63c0a7dcb8672add84237581f2da280.bindPopup(popup_214e771bf05a5e6722a29cb64ae53096)
+        ;
+
+        
+    
+    
+            var circle_marker_ccc70bcc2dfeb4b57ea183ac821023cc = L.circleMarker(
+                [40.65517458, -73.96206916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_7448c5d429e324bcfaf9f14c425bcf7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b2b05156f9218703bcf35e7d5840a9e = $(`<div id="html_2b2b05156f9218703bcf35e7d5840a9e" style="width: 100.0%; height: 100.0%;"><b>Crown heights running club</b><br> <a href='https://crownheightsrunningclub.nyc/running/'>https://crownheightsrunningclub.nyc/running/</a><br> MTWTh, Sat. This one looks great. Plus it’s in prospect park!</div>`)[0];
+            popup_7448c5d429e324bcfaf9f14c425bcf7c.setContent(html_2b2b05156f9218703bcf35e7d5840a9e);
+        
+
+        circle_marker_ccc70bcc2dfeb4b57ea183ac821023cc.bindPopup(popup_7448c5d429e324bcfaf9f14c425bcf7c)
+        ;
+
+        
+    
+    
+            var circle_marker_b396803edb0a36a21ed63a26f234b7b4 = L.circleMarker(
+                [40.66300395, -73.96245823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_3070e7d9f847b1acce1bc191e8f82549 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e42eef6826ad6a5ca2158ecadb0dca74 = $(`<div id="html_e42eef6826ad6a5ca2158ecadb0dca74" style="width: 100.0%; height: 100.0%;"><b>Crown heights running club</b><br> <a href='https://crownheightsrunningclub.nyc/running/'>https://crownheightsrunningclub.nyc/running/</a><br> MTWTh, Sat. This one looks great. Plus it’s in prospect park!</div>`)[0];
+            popup_3070e7d9f847b1acce1bc191e8f82549.setContent(html_e42eef6826ad6a5ca2158ecadb0dca74);
+        
+
+        circle_marker_b396803edb0a36a21ed63a26f234b7b4.bindPopup(popup_3070e7d9f847b1acce1bc191e8f82549)
+        ;
+
+        
+    
+    
+            var circle_marker_bc3eb5cd921a7ae7a44a0ef181c3907f = L.circleMarker(
+                [40.67404105, -73.96986791],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_cd106a5e3352ac3ce3ca65518eb71134 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3e5bb0151a021a0cbc06cc95a56711e = $(`<div id="html_f3e5bb0151a021a0cbc06cc95a56711e" style="width: 100.0%; height: 100.0%;"><b>Crown heights running club</b><br> <a href='https://crownheightsrunningclub.nyc/running/'>https://crownheightsrunningclub.nyc/running/</a><br> MTWTh, Sat. This one looks great. Plus it’s in prospect park!</div>`)[0];
+            popup_cd106a5e3352ac3ce3ca65518eb71134.setContent(html_f3e5bb0151a021a0cbc06cc95a56711e);
+        
+
+        circle_marker_bc3eb5cd921a7ae7a44a0ef181c3907f.bindPopup(popup_cd106a5e3352ac3ce3ca65518eb71134)
+        ;
+
+        
+    
+    
+            var circle_marker_06686be133e12239d91a493a1ecd3b00 = L.circleMarker(
+                [40.6704399, -73.9581251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_b5758e3a2f1787bd0edd2178b9b4e1e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_597a12fe4923efce3d469070a65b2f20 = $(`<div id="html_597a12fe4923efce3d469070a65b2f20" style="width: 100.0%; height: 100.0%;"><b>Crown heights running club</b><br> <a href='https://crownheightsrunningclub.nyc/running/'>https://crownheightsrunningclub.nyc/running/</a><br> MTWTh, Sat. This one looks great. Plus it’s in prospect park!</div>`)[0];
+            popup_b5758e3a2f1787bd0edd2178b9b4e1e8.setContent(html_597a12fe4923efce3d469070a65b2f20);
+        
+
+        circle_marker_06686be133e12239d91a493a1ecd3b00.bindPopup(popup_b5758e3a2f1787bd0edd2178b9b4e1e8)
+        ;
+
+        
+    
+    
+            var circle_marker_31b0ab74feda364c048d0ce58dfbc294 = L.circleMarker(
+                [40.77393398, -73.97098582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_74ff2ee4a4268d3da93bc02fc6809512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b44165358aeb88db0d55bb790c1ce334 = $(`<div id="html_b44165358aeb88db0d55bb790c1ce334" style="width: 100.0%; height: 100.0%;"><b>Dashing Whippets</b><br> <a href='https://www.instagram.com/dashingwhippets/'>https://www.instagram.com/dashingwhippets/</a><br> Events throughout the week, 90 day free trial</div>`)[0];
+            popup_74ff2ee4a4268d3da93bc02fc6809512.setContent(html_b44165358aeb88db0d55bb790c1ce334);
+        
+
+        circle_marker_31b0ab74feda364c048d0ce58dfbc294.bindPopup(popup_74ff2ee4a4268d3da93bc02fc6809512)
+        ;
+
+        
+    
+    
+            var circle_marker_b50b5400bb6cb5f0913adfb5bd0f309b = L.circleMarker(
+                [40.68985397, -73.97133555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_a41da15566b50a98fe87237b4471b12a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef27ae0ccd0b033041db985061009e2f = $(`<div id="html_ef27ae0ccd0b033041db985061009e2f" style="width: 100.0%; height: 100.0%;"><b>DeFine running club</b><br> <a href='https://www.instagram.com/definenewyorkrunclub/?hl=en'>https://www.instagram.com/definenewyorkrunclub/?hl=en</a><br> Saturday long run. Starts at Dick & Janes 266 Adelphi Street</div>`)[0];
+            popup_a41da15566b50a98fe87237b4471b12a.setContent(html_ef27ae0ccd0b033041db985061009e2f);
+        
+
+        circle_marker_b50b5400bb6cb5f0913adfb5bd0f309b.bindPopup(popup_a41da15566b50a98fe87237b4471b12a)
+        ;
+
+        
+    
+    
+            var circle_marker_b0015894286f28e64cf8cf37105ef78d = L.circleMarker(
+                [40.71999968, -73.95118787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_f69fe20935f4ac11b11ac249259077da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_513975ab8d2ed83231086ba1f69ab5d3 = $(`<div id="html_513975ab8d2ed83231086ba1f69ab5d3" style="width: 100.0%; height: 100.0%;"><b>Girls run NYC</b><br> <a href='https://www.instagram.com/girlsrunnyc/'>https://www.instagram.com/girlsrunnyc/</a><br> Wednesdays at McCarren Track</div>`)[0];
+            popup_f69fe20935f4ac11b11ac249259077da.setContent(html_513975ab8d2ed83231086ba1f69ab5d3);
+        
+
+        circle_marker_b0015894286f28e64cf8cf37105ef78d.bindPopup(popup_f69fe20935f4ac11b11ac249259077da)
+        ;
+
+        
+    
+    
+            var circle_marker_c93c5ab5862e2d1c7c57d390eda3b485 = L.circleMarker(
+                [40.68451823, -73.93242156],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_f1805598854ad2ef79370350a86ccf94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9923e7b5323516da42592d55bea7daa6 = $(`<div id="html_9923e7b5323516da42592d55bea7daa6" style="width: 100.0%; height: 100.0%;"><b>Goldfinger track club</b><br> <a href='https://gftcnyc.com/'>https://gftcnyc.com/</a><br> Thursday community run 570 Hancock Street</div>`)[0];
+            popup_f1805598854ad2ef79370350a86ccf94.setContent(html_9923e7b5323516da42592d55bea7daa6);
+        
+
+        circle_marker_c93c5ab5862e2d1c7c57d390eda3b485.bindPopup(popup_f1805598854ad2ef79370350a86ccf94)
+        ;
+
+        
+    
+    
+            var circle_marker_c89b9b579c910878702e2187ea38cbe0 = L.circleMarker(
+                [40.72840842, -73.95924029],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_8fed3be63572fbaf6056698a7ed9284b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2e02b65e9e75575992d3ed730aee3ad = $(`<div id="html_d2e02b65e9e75575992d3ed730aee3ad" style="width: 100.0%; height: 100.0%;"><b>Greenpoint runners</b><br> <a href='https://www.instagram.com/greenpointrunners/?hl=en'>https://www.instagram.com/greenpointrunners/?hl=en</a><br> HUGE! Saturday group run</div>`)[0];
+            popup_8fed3be63572fbaf6056698a7ed9284b.setContent(html_d2e02b65e9e75575992d3ed730aee3ad);
+        
+
+        circle_marker_c89b9b579c910878702e2187ea38cbe0.bindPopup(popup_8fed3be63572fbaf6056698a7ed9284b)
+        ;
+
+        
+    
+    
+            var circle_marker_c9bd49457b81967a1fc16d19a819861a = L.circleMarker(
+                [40.72058643, -74.00048408],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_d034d6034e5db26c4ad9dba535b36238 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_886c7e9c97cb2794765970184c76c9ab = $(`<div id="html_886c7e9c97cb2794765970184c76c9ab" style="width: 100.0%; height: 100.0%;"><b>Nike running experiences</b><br> <a href='https://www.nike.com/us/en/experiences/events?countryCode=US&categoryCode=Running'>https://www.nike.com/us/en/experiences/events?countryCode=US&categoryCode=Running</a><br> Weekly runs to check out</div>`)[0];
+            popup_d034d6034e5db26c4ad9dba535b36238.setContent(html_886c7e9c97cb2794765970184c76c9ab);
+        
+
+        circle_marker_c9bd49457b81967a1fc16d19a819861a.bindPopup(popup_d034d6034e5db26c4ad9dba535b36238)
+        ;
+
+        
+    
+    
+            var circle_marker_0badf9e979d6833edc47a97be978d459 = L.circleMarker(
+                [40.67378059, -73.97038828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_095028ea650db4d360867abcd4d4997f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f56bc00de779fa3308ea5afa03a04a27 = $(`<div id="html_f56bc00de779fa3308ea5afa03a04a27" style="width: 100.0%; height: 100.0%;"><b>Prospect Park Track Club</b><br> <a href='https://pptc.org/group-runs'>https://pptc.org/group-runs</a><br> Every day of the week</div>`)[0];
+            popup_095028ea650db4d360867abcd4d4997f.setContent(html_f56bc00de779fa3308ea5afa03a04a27);
+        
+
+        circle_marker_0badf9e979d6833edc47a97be978d459.bindPopup(popup_095028ea650db4d360867abcd4d4997f)
+        ;
+
+        
+    
+    
+            var circle_marker_0bf962bba00f0dce6874fe55885e1391 = L.circleMarker(
+                [40.7105656, -73.96115888],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_6bd06a2d76169d9302abbe7ea9dd7532 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd9256580726409e82e59f1775f316b4 = $(`<div id="html_dd9256580726409e82e59f1775f316b4" style="width: 100.0%; height: 100.0%;"><b>North Brooklyn Runners</b><br> <a href='https://northbrooklynrunners.org/'>https://northbrooklynrunners.org/</a><br> McCarren Park</div>`)[0];
+            popup_6bd06a2d76169d9302abbe7ea9dd7532.setContent(html_dd9256580726409e82e59f1775f316b4);
+        
+
+        circle_marker_0bf962bba00f0dce6874fe55885e1391.bindPopup(popup_6bd06a2d76169d9302abbe7ea9dd7532)
+        ;
+
+        
+    
+    
+            var circle_marker_c67285549c904d8a0094ed2420e42f47 = L.circleMarker(
+                [40.72122852, -73.95094127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_c02618a6d1d6567751b201765106a81f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbef495c9d6087c5ebb317cf67bf686f = $(`<div id="html_cbef495c9d6087c5ebb317cf67bf686f" style="width: 100.0%; height: 100.0%;"><b>North Brooklyn Runners</b><br> <a href='https://northbrooklynrunners.org/'>https://northbrooklynrunners.org/</a><br> McCarren Park</div>`)[0];
+            popup_c02618a6d1d6567751b201765106a81f.setContent(html_cbef495c9d6087c5ebb317cf67bf686f);
+        
+
+        circle_marker_c67285549c904d8a0094ed2420e42f47.bindPopup(popup_c02618a6d1d6567751b201765106a81f)
+        ;
+
+        
+    
+    
+            var circle_marker_9bb31f1e953f73b19871ac09ecd0bef8 = L.circleMarker(
+                [40.7194691, -73.9513348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_de3530ef8e3ae1d421f61044e873e20d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7555699fc71194672c51ae0bb95db7e0 = $(`<div id="html_7555699fc71194672c51ae0bb95db7e0" style="width: 100.0%; height: 100.0%;"><b>NYC Sprint Collective</b><br> <a href='https://www.instagram.com/nycsprintcollective/'>https://www.instagram.com/nycsprintcollective/</a><br> McCarren Park, looks intense but fun!</div>`)[0];
+            popup_de3530ef8e3ae1d421f61044e873e20d.setContent(html_7555699fc71194672c51ae0bb95db7e0);
+        
+
+        circle_marker_9bb31f1e953f73b19871ac09ecd0bef8.bindPopup(popup_de3530ef8e3ae1d421f61044e873e20d)
+        ;
+
+        
+    
+    
+            var circle_marker_ec0b43d2a889f0bbe3e133ee342b9429 = L.circleMarker(
+                [40.76793735, -73.98197251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_ead36ab0e928327ebdcb31fa8bf0ef2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e378a7214d254b457d1d6bc6d2d7e31d = $(`<div id="html_e378a7214d254b457d1d6bc6d2d7e31d" style="width: 100.0%; height: 100.0%;"><b>Runners NYC / Adidas Run Club</b><br> <a href='https://www.instagram.com/runnersnewyorkcity/'>https://www.instagram.com/runnersnewyorkcity/</a><br> sign up on the app, Columbus Circle</div>`)[0];
+            popup_ead36ab0e928327ebdcb31fa8bf0ef2c.setContent(html_e378a7214d254b457d1d6bc6d2d7e31d);
+        
+
+        circle_marker_ec0b43d2a889f0bbe3e133ee342b9429.bindPopup(popup_ead36ab0e928327ebdcb31fa8bf0ef2c)
+        ;
+
+        
+    
+    
+            var circle_marker_f18e1a13691ef4d95e4c5cd484267540 = L.circleMarker(
+                [40.7752009, -73.9687157],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_aea94838bf46a141b467241110e99d57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bec0bfd171af6ce56f1efe011700d61 = $(`<div id="html_7bec0bfd171af6ce56f1efe011700d61" style="width: 100.0%; height: 100.0%;"><b>Central Park Running Club</b><br> <a href='https://www.instagram.com/centralparkrunning?igshid=MTIzZWMxMTBkOA%3D%3D'>https://www.instagram.com/centralparkrunning?igshid=MTIzZWMxMTBkOA%3D%3D</a><br> They have a slack! Meet at central park boathouse</div>`)[0];
+            popup_aea94838bf46a141b467241110e99d57.setContent(html_7bec0bfd171af6ce56f1efe011700d61);
+        
+
+        circle_marker_f18e1a13691ef4d95e4c5cd484267540.bindPopup(popup_aea94838bf46a141b467241110e99d57)
+        ;
+
+        
+    
+    
+            var circle_marker_def0306a23672c17d49bbecc628e3a44 = L.circleMarker(
+                [40.7420105, -74.01053504],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_c3147c49b62c9e4849b4ecf3f84c32c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_810e91e53bec4604f19ef536df9cee80 = $(`<div id="html_810e91e53bec4604f19ef536df9cee80" style="width: 100.0%; height: 100.0%;"><b>Dirty Bird RC</b><br> <a href='https://www.dirtybirdrc.com/'>https://www.dirtybirdrc.com/</a><br> W, Th, Sat, Little island NYC -> Laughing man cafe</div>`)[0];
+            popup_c3147c49b62c9e4849b4ecf3f84c32c5.setContent(html_810e91e53bec4604f19ef536df9cee80);
+        
+
+        circle_marker_def0306a23672c17d49bbecc628e3a44.bindPopup(popup_c3147c49b62c9e4849b4ecf3f84c32c5)
+        ;
+
+        
+    
+    
+            var circle_marker_73b87467745af0313d2e1047cccd256b = L.circleMarker(
+                [40.7738985, -73.97098922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_3a2d8a793195f0c920aa25091cf9232e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_add305eb039dcae43fcefbf43120f896 = $(`<div id="html_add305eb039dcae43fcefbf43120f896" style="width: 100.0%; height: 100.0%;"><b>The November Project</b><br> <a href='https://www.instagram.com/novemberprojectnyc/'>https://www.instagram.com/novemberprojectnyc/</a><br> Bethesda Terrace</div>`)[0];
+            popup_3a2d8a793195f0c920aa25091cf9232e.setContent(html_add305eb039dcae43fcefbf43120f896);
+        
+
+        circle_marker_73b87467745af0313d2e1047cccd256b.bindPopup(popup_3a2d8a793195f0c920aa25091cf9232e)
+        ;
+
+        
+    
+    
+            var circle_marker_f7458adf3495d9e0e73ce06210bb7524 = L.circleMarker(
+                [40.768238, -73.98161846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_dec57179f2635e65a2113a58bf91a8f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51ee1bea1e71acd566ee26fd2fb84753 = $(`<div id="html_51ee1bea1e71acd566ee26fd2fb84753" style="width: 100.0%; height: 100.0%;"><b>The Not So Serious Run Group</b><br> <a href='https://www.meetup.com/Not-So-Serious-Running-Group-NYC/'>https://www.meetup.com/Not-So-Serious-Running-Group-NYC/</a><br> Columbus Circle, fun group!</div>`)[0];
+            popup_dec57179f2635e65a2113a58bf91a8f5.setContent(html_51ee1bea1e71acd566ee26fd2fb84753);
+        
+
+        circle_marker_f7458adf3495d9e0e73ce06210bb7524.bindPopup(popup_dec57179f2635e65a2113a58bf91a8f5)
+        ;
+
+        
+    
+    
+            var circle_marker_56540cf104ec52574408acb61d4136dd = L.circleMarker(
+                [40.67508251, -73.97036682],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d8b02b99ed810b81703b3a272751712d);
+        
+    
+        var popup_6c57a72047c3dab9f43d197e5ecbc431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eee9793ac2f565e40010f81c35c51fc4 = $(`<div id="html_eee9793ac2f565e40010f81c35c51fc4" style="width: 100.0%; height: 100.0%;"><b>Masala Milers</b><br> <a href='https://www.instagram.com/masala.milers/'>https://www.instagram.com/masala.milers/</a><br> Prospect Park</div>`)[0];
+            popup_6c57a72047c3dab9f43d197e5ecbc431.setContent(html_eee9793ac2f565e40010f81c35c51fc4);
+        
+
+        circle_marker_56540cf104ec52574408acb61d4136dd.bindPopup(popup_6c57a72047c3dab9f43d197e5ecbc431)
+        ;
+
+        
+    
+</script>
+</html>
