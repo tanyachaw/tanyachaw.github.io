@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August 13th in New York</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+            text-align: center;
+            padding-top: 40px; 
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 400px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            padding-left: 400px; 
+            padding-right: 400px;
+            font-family: 'DM Mono', monospace;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        code {
+            font-family: Consolas, "Courier New", monospace;
+        }
+
+        .center-image {
+            text-align: center;
+        }
+
+    </style>
+
+ </head>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img src="header.jpg" alt="Tanya Chawla">
+        </a>
+    </header>
+
+    <main>
+        
+        <article>
+            <h2>August 13th in New York</h2>
+            <h4>8/13/24</h4>
+            <p>
+            
+            The key to a successful bargain is not wanting the product. 
+            Even if you do, you don’t. See a thing, like it, set an upper 
+            limit. Make sure it’s reasonable. Go to the person selling it 
+            and just plainly present what you like. Then, after they tell you 
+            how much it is, tell them your upper limit. Thank them when and if they succumb. <br><br>
+
+            I saw an outdoor thrift store somewhere in Manhattan. I didn’t expect to like 
+            anything, but I ended up liking two skirts - a pink and a floral number. A white 
+            top too. All three of which were realistically worth 20 dollars. The lady selling 
+            them, Riza, told me the top was 35, the pink skirt was 30, and the floral was 40. 
+            Atrocious, but I didn’t say that to Riza. I told her I’ll take both skirts for 50. 
+            She countered with 55. I stared at the pink skirt. “Let me think about it,” I said. 
+            Took 3 minutes. I told her I’d just do the floral for 30. 
+            She succumbed and told me to take both for 50. Then she took a picture of me 
+            for their instagram story - they do this for all customers, I wasn’t special 
+            (although still flattered). <br><br>
+
+            I never thought I could bargain. I grew up seeing my mom and 
+            grandmother bargain in India, which looks like the vendor saying 50 and them 
+            insulting the vendor, saying that his eggplant is rotten and thus is worth 5. 
+            I liked when the vendors hit back with the “ok don’t buy it then.” But almost 
+            every time, my mother figures got a good deal. I never understood how. But I guess 
+            I’m learning. <br><br>
+
+            Elderberry stems are toxic. I guess the berries are too, I don’t know. 
+            So you have very limited options of what to do with elderberries. I made a syrup, 
+            which took two hours to cook down and left me with, let’s see, a tablespoon. <br><br>
+
+            I’ve tried explaining recursion to exactly three people in my life and 
+            failed every single time to convey how absolutely mind-blowing it is. What I 
+            love the most about it is that it’s a mathematical concept about trust. 
+            You have to blindly trust so many moving parts - it breaks your brain if you 
+            try to understand how it works. And yet it works. It’s the closest thing to witchcraft I’ve 
+            seen in math. <br><br>
+
+            All I will do is try to explain it the way I learned it - through the Fibonacci problem.<br><br>
+
+            The Fibonacci sequence is named after a dude. He was Italian. In the sequence, 
+            each number is a sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, 21, 
+            34, 55, etc. etc. Hopefully you see it. <br><br>
+
+            We want to write an algorithm that gives us the nth Fibonacci number. 
+            That is, we want to tell the program, hey give me the 6th Fibonacci number, 
+            and it’s supposed to give us 8. Similarly we can say give us the 2nd number, 
+            and it’s supposed to give us 1. <br><br>
+
+            We solve this problem through recursion. Here’s the 
+            outline of a recursive solution courtesy 
+            <a href="https://docs.google.com/presentation/d/1GG22dJyh85zENV-YJirBn8U7moXVKhzXjrT5PcfrfOk/edit#slide=id.g2e93efb9d70_0_1">CS 10 slides</a>: <br>
+
+            <ul>
+                <li>Base case(s)</li>
+                    <ul>
+                        <li>What’s the simplest or smallest case?</li>
+                    </ul>
+                <li>Recursive case</li>
+                    <ul>
+                        <li>Divide the problem into smaller parts.</li>
+                        <li>Invoke the function on each part (recursively).</li>
+                        <li>Combine parts into a total solution.</li>
+                    </ul>
+            </ul>
+
+            Let’s blindly trust the outline and build a solution in code. 
+            First just define the inputs and outputs the program will take. 
+            The input is a number anywhere from 1 to infinity. The output is a 
+            number anywhere from 0 to infinity given that it shows up in the Fibonacci sequence. <br><br>
+
+            Base case: if the input is negative or 0, end the program. That’s BS. 
+            A person shouldn't ask for a negative or zero-th Fibonacci number.<br><br>
+
+            Base case: If the input is 1, return 0. 0 is the first Fibonacci number. Remember, simplest case. <br><br>
+
+            Base case 3: If the input is 2, return 1. Another simple case!<br><br>
+
+            Recursive case (PREPARE YOURSELF): if none of the above cases apply, return the 
+            sum of the last and second to last Fibonacci numbers. Put mathematically, we tell 
+            the computer to return the outcome of this very program ran on the (input - 1) + 
+            (the input - 2). AND JUST TRUST THAT IT WORKS. AND IT DOES. <br><br>
+
+            Here it is in code:<br>
+
+            <pre><code>
+                def Fibonacci(n):
+                    if n <= 0:
+                        print("Incorrect input")
+                    # First Fibonacci number is 0
+                    elif n == 1:
+                        return 0
+                    # Second Fibonacci number is 1
+                    elif n == 2:
+                        return 1
+                    else:
+                        return Fibonacci(n-1) + Fibonacci(n-2)  
+                    </code></pre>
+
+                    I miss math. It provided a nice balance in life. 
+                    I could be a frustrated person in Pro Tools or a google doc 
+                    where there would be no right answer and when the frustration 
+                    would become too much, I could go back to a Jupyter notebook or my 
+                    iPad where there would indeed be one right answer. You either get it or 
+                    you don’t. True or False. 1 or 0. I long for that unambiguity.
+                    I want to explain recursion to someone over and over again until I figure 
+                    out the best way to get the point across. <br><br>
+
+                    Ira Glass once said “there are no guilty pleasures, only pleasures.” 
+                    He is somewhat right and somewhat wrong. I have guilty pleasures. 
+                    Nut butter for one. Peanut butter was invented in 1884. The National 
+                    Peanut Board says that there is evidence of ancient South American Incas 
+                    being the first to grind peanuts to a paste. I don’t have a citation for this so don't trust it. 
+                    There are a few people who invented peanut butter, 
+                    but let’s just focus on one. In 1895, John Harvey Kellogg, yes that dude, 
+                    patented the peanut butter making process and marketed it as a protein 
+                    substitute for people who couldn’t chew. Which sounds like a skit. 
+                    He boiled the peanuts instead of roasting them. It was initially 
+                    for the wealthy and then became popular at the Battle Creek Sanitarium, 
+                    a health resort and spa, for you know, the protein-starved people who couldn’t chew. <br><br>
+                    
+                    The initial peanut butters seem to be just roasted peanuts and oil. 
+                    Skippy made “Chunky” peanut butter. Procter and Gamble made Jif, 
+                    which was the first brand to add sugar and molasses to (and thus ruin) the product.<br><br>
+
+                    I want to switch gears to peanut butter and jelly sandwiches for a second. 
+                    Here's a beautiful <a href="https://www.epicurious.com/recipes-menus/peanut-butter-and-jelly-history">article</a> about the history of the PB & J. Originally when 
+                    peanut butter came on the scene, it was paired with things like pickles, mayo,
+                    tomatos, celery, hard-boiled eggs, green peppers and maraschino cherries. 
+                    In 1901, the first recipe for a PB & J appeared in the Boston Cooking School 
+                    Magazine, which recommended pairing peanut butter with currant or crab apple 
+                    jelly. I have an emotional relationship with this sandwich. It hits at a tender part of 
+                    my childhood, but something I dropped from my diet as I grew older. I miss it, 
+                    though I can’t imagine willingly making one for myself today. And it’s not just me - 
+                    an average American child will eat around 1500 PB & J’s before graduating from 
+                    high school (courtesy this <a href="https://www.smithsonianmag.com/innovation/brief-history-peanut-butter-180976525/">article</a>). <br><br>
+
+                    This is one of the best bits of peanut butter history. During Covid, 
+                    Dana Small from Yale was trying to figure out a smell to use to test for 
+                    asymptomatic carriers. She thought about it, asked herself and her team 
+                    “what food most people in the U.S. have in their cupboards that provides a strong, 
+                    familiar odor?” You guessed it. PEANUT BUTTER. Everyone who couldn’t smell peanut 
+                    butter later tested positive for Covid. <br><br>
+
+                    I've always wondered why dark chocolate felt like a hug in a food. 
+                    Turns out, if this Cleveland Clinic <a href="https://health.clevelandclinic.org/dark-chocolate-health-benefits">article</a> is to be trusted, 
+                    it’s because of things called polyphenolic compounds. They’re antioxidants 
+                    that lower cortisol levels. This feels like a simplification. <br><br>
+
+                    Here’s a <a href="https://www.sciencedirect.com/science/article/pii/S0955286321002746">study</a> testing dark chocolate and mood improvement. 
+                    They tested three groups, one who consumed 85% cocoa chocolate, 
+                    70% cocoa chocolate, and no chocolate. Turns out the 85% group saw a 
+                    significant improvement in mood but the 70% didn’t! Gah! I must switch 
+                    percentages! Damnit! (edit: I did, 85 is as satiating as 70, just a tad more bitter) 
+                    Compared to the no chocolate group, the 85ers had more microbial diversity, their 
+                    blautia obeum levels were elevated (it’s a bacteria in the gut but I have no idea what it does). 
+                    There was a negative correlation between negative emotional states and blautia obeum levels, 
+                    which is a complicated way of saying more blautia obeum is correlated with better moods. 
+                    It may be concluded that 85% cocoa chocolate may improve mood through the gut-brain axis. <br><br>
+
+                    The gut-brain axis is a bidirectional communication network between the central (read brain) 
+                    and enteric (read gut) nervous system. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4367209/">THIS IS FASCINATING.</a> It links central nervous disorders - 
+                    anxiety, autism, depression - to functional gastrointestinal disorders - IBS, low appetite, 
+                    constipation etc. Pay attention to your stomach! Everything’s linked.  <br><br>
+
+                    I’ve been meaning to write about the central nervous system (CNS) and how it stores the past in our bodies. 
+                    Also the <a href="https://bigthink.com/neuropsych/triune-brain/">triune brain model</a> or the proposed model of the three parts of our brains - 
+                    limbic, reptilian, and neocortex. The reptilian is the oldest brain - it tells us we’re hungry 
+                    or about to be killed. The limbic gives us emotions and fucks us all up. The neocortex helps with 
+                    learning, thinking, writing, and absorbing information. It’s the newest brain. <br><br>
+
+                    I’ll end with this. I’m not sure how to describe Prospect Heights other than saying 
+                    it is one of the best places I’ve ever lived. I lost a yoga mat and hence a little light in life, 
+                    and found a beautiful one the next day someone kept outside on the street. 
+                    I’ve picked up books, New Yorker magazines, and a white board too. It’s the best at 6am because you can 
+                    smell the za'atar bagels outside the old brooklyn bagel company. 
+                    And best after sunset because the harsh sun left and now you can walk to 
+                    Vanderbilt Avenue in the most gorgeous weather known to mankind. Prospect park is a 10 minute 
+                    walk away. A solid yoga place is a 3 minute walk away. A gym is 7. People say good morning to you. 
+                    It seems like everyone who lives there has kids or is pregnant or is 
+                    reading the book pictured below. Manhattan’s fascinating, of course. But so far it just can’t compare. <br><br>
+
+                    <div class="center-image">
+                        <div class="image-container">
+                            <img src="impatient.png" width="300px">
+                        <div class="overlay">
+                            <p></p>
+                        </div>
+                     </div>
+                    </div> 
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
