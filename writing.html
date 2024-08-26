@@ -63,15 +63,21 @@
         p {
             font-family: 'DM Mono', monospace;
             padding-top: 20px;
-        }
-
+            max-width: 400px; /* Adjust this width as needed */
+            margin: 0 auto;   /* Center the paragraph */
+            word-wrap: break-word; /* Ensure long words wrap properly */
+            line-height: 1.6;
+            }
+    
         p a {
             display: block;
             margin-bottom: 10px; 
+            margin-top: 10px; 
          }
 
-
-
+        .days-links a {
+            display: inline;
+        }
     </style>
 
  </head>
@@ -84,22 +90,26 @@
 
     <main>
         <!-- <a href="writing"><img src="writing.png" alt="writing" width="110px"></a> -->
-            <p>
-                <i style="font-size: 15px;">Working on making these small-screen friendly.</i><br><br>
-                
-                
-                <a href="august21">August 21st in New York</a> 
-                <a href="august13">August 13th in New York</a>
-                <a href="july29">July 29th in New York</a>
-                <a href="july20">July 20th in New York</a>
-                <a href="july16">July 16th in New York</a>
-                <a href="runclubs">Run clubs in NYC/BK</a>
-                <a href="graduation">Graduation</a>
-                <a href="finance">Personal finance spiel</a> 
-                <a href="22">22 things learned at (almost) 22</a> 
-                <a href="cycles">The menstrual cycle</a>
-                <a href="mechanism">Mechanism design</a>
-            </p>
+        <p>
+            <i style="font-size: 15px;">Working on making these small-screen friendly.</i><br><br>
+            
+            <span class="days-links">Days in New York - 
+                <a href="july16">July 16th</a>, 
+                <a href="july20">July 20th</a>, 
+                <a href="july29">July 29th</a>, 
+                <a href="august13">Aug 13th</a>, 
+                <a href="august21">Aug 21st</a>
+            </span><br>
+            
+            <a href="runclubs">Run clubs in NYC/BK</a>
+            <a href="graduation">Graduation</a>
+            <a href="finance">Personal finance spiel</a>
+            <a href="22">22 things learned at (almost) 22</a>
+            <a href="cycles">The menstrual cycle</a>
+            <a href="mechanism">Mechanism design</a>
+        </p>
+        
+        
             
     </main>
     
