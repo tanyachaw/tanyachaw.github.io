@@ -13,85 +13,103 @@
     
     
     <style>
-        body {
-            text-align: center;
-            margin: 0;
-            background-color: #ffffff; /* White background */
-            opacity: 0;
-            transition: opacity 2s ease;
-        }   
+       /* General Styles */
+            body {
+                text-align: center;
+                margin: 0;
+                background-color: #ffffff; /* White background */
+                opacity: 0;
+                transition: opacity 2s ease;
+            }
 
+            header {
+                text-align: center;
+                padding-top: 40px;
+            }
 
-        header {
-            text-align: center;
-            padding-top: 40px; 
-        }
+            img { 
+                max-width: 300px;
+                height: auto;
+                top: 30px;
+            }
 
-        img { 
-            max-width: 300px;
-            height: auto;
-            top: 30px;
-        }
+            /* Image Container */
+            .image-container {
+                max-width: 400px; /* Adjust as needed */
+                margin: 20px auto; /* Center the container and add spacing */
+                position: relative;
+            }
 
-        .image-container {
-            max-width: 400px; /* Adjust as needed */
-            margin: 20px auto; /* Center the container and add spacing */
-            position: relative;
-        }
+            .orange-ball-image {
+                max-width: 400px;
+                margin-top: 50px;
+            }
 
-        .overlay-images {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
+            /* Overlay Images */
+            .overlay-images {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
 
-        .overlay-images a {
-            position: absolute;
-            display: block;
-        }
+            .overlay-images a {
+                position: absolute;
+                display: block;
+            }
 
-        .overlay-images img {
-            width: 100%; /* Ensure images take up the entire anchor */
-        }
+            /* Default images */
+            .overlay-images img.default {
+                width: 100%; /* Ensure images take up the entire anchor */
+            }
 
-        /* Set specific positions for each image */
-        .overlay-images a:nth-child(1) { /* writing */
-            top: -60px;
-            right: 20px;
-            width: 85px;
-            transform: rotate(0deg);
-        }
+            /* Hover images */
+            .overlay-images img.white {
+                display: none; /* Hide white images initially */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /* Ensure images take up the entire anchor */
+            }
 
-        .overlay-images a:nth-child(2) { /* work */
-            top: 90px;
-            left: -80px;
-            width: 68px;
-            transform: rotate(4deg);
-        }
+            /* Set specific positions for each image */
+            .overlay-images a:nth-child(1) { /* writing */
+                top: -60px;
+                right: 20px;
+                width: 85px;
+                transform: rotate(0deg);
+            }
 
-        .overlay-images a:nth-child(3) { /* about */
-            top: 18px;
-            right: -100px;
-            width: 70px;
-            transform: rotate(4deg);
-        }
+            .overlay-images a:nth-child(2) { /* work */
+                top: 90px;
+                left: -80px;
+                width: 68px;
+                transform: rotate(4deg);
+            }
 
-        .currently-image {
-            max-width: 250px; /* Adjust as needed */
-            margin-top: -30px;
-        }
+            .overlay-images a:nth-child(3) { /* about */
+                top: 18px;
+                right: -100px;
+                width: 70px;
+                transform: rotate(4deg);
+            }
 
-        .orange-ball-image {
-            max-width: 400px;
-            margin-top: 50px;
-        }
+            /* Hover Effect */
+            .overlay-images a:hover img.default {
+                display: none; /* Hide the default image on hover */
+            }
 
-        footer {
-            font-family: 'DM Mono', monospace;
-            margin-top: auto; /* This pushes the footer to the bottom */
-            padding: 10px;
-            font-size: 12px;
-        }
+            .overlay-images a:hover img.white {
+                display: block; /* Show the white image on hover */
+            }
+
+            /* Footer */
+            footer {
+                font-family: 'DM Mono', monospace;
+                margin-top: auto; /* This pushes the footer to the bottom */
+                padding: 10px;
+                font-size: 12px;
+            }
+
    </style>
 
 </head>
@@ -108,16 +126,20 @@
             <img class="orange-ball-image" src="orange ball.jpg" alt="Orange Ball Image">
             <div class="overlay-images">
                 <a href="writing">
-                    <img src="writing.png" alt="Writing Image">
+                    <img class="writing-image default" src="writing.png" alt="Writing Image">
+                    <img class="writing-image white" src="writing-white.png" alt="Writing Image White">
                 </a>
                 <a href="work">
-                    <img src="work.png" alt="Work Image">
+                    <img class="work-image default" src="work.png" alt="Work Image">
+                    <img class="work-image white" src="work-white.png" alt="Work Image White">
                 </a>
                 <a href="about">
-                    <img src="about.png" alt="About Image">
+                    <img class="about-image default" src="about.png" alt="About Image">
+                    <img class="about-image white" src="about-white.png" alt="About Image White">
                 </a>
             </div>
         </div>
+        
     
     </main>
 
