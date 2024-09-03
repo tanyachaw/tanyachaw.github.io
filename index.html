@@ -13,7 +13,7 @@
     
     
     <style>
-       /* General Styles */
+      /* General Styles */
             body {
                 text-align: center;
                 margin: 0;
@@ -25,12 +25,40 @@
             header {
                 text-align: center;
                 padding-top: 40px;
+                position: relative; /* Ensure header is the positioning context */
+                display: inline-block; /* Adjust to fit the content */
             }
 
-            img { 
+            header a {
+                display: block;
+                position: relative; /* Make the link the positioning context */
+            }
+
+            header a img {
                 max-width: 300px;
                 height: auto;
-                top: 30px;
+                transition: opacity 0.2s ease; /* Smooth transition between images */
+            }
+
+            header a img.header-default {
+                position: relative; /* Keep default image positioned normally */
+                z-index: 1; /* Place it above the yellow image initially */
+            }
+
+            header a img.header-yellow {
+                position: absolute; /* Overlay yellow image directly on top */
+                top: 0;
+                left: 0;
+                z-index: 0; /* Place it behind initially */
+                opacity: 0; /* Start with the yellow image hidden */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
             }
 
             /* Image Container */
@@ -60,6 +88,7 @@
             /* Default images */
             .overlay-images img.default {
                 width: 100%; /* Ensure images take up the entire anchor */
+                transition: opacity 0.5s ease; /* Smooth transition for hover effect */
             }
 
             /* Hover images */
@@ -69,6 +98,7 @@
                 top: 0;
                 left: 0;
                 width: 100%; /* Ensure images take up the entire anchor */
+                transition: opacity 0.5s ease; /* Smooth transition for hover effect */
             }
 
             /* Set specific positions for each image */
@@ -95,11 +125,12 @@
 
             /* Hover Effect */
             .overlay-images a:hover img.default {
-                display: none; /* Hide the default image on hover */
+                opacity: 0; /* Fade out the default image on hover */
             }
 
             .overlay-images a:hover img.white {
-                display: block; /* Show the white image on hover */
+                display: block; /* Ensure the white image is visible */
+                opacity: 1; /* Fade in the white image on hover */
             }
 
             /* Footer */
@@ -110,18 +141,20 @@
                 font-size: 10px;
             }
 
+
    </style>
 
 </head>
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img src="header.jpg" alt="Tanya Chawla">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
 
-    <main>       
-
+    <main>    
+        
         <div class="image-container">
             <img class="orange-ball-image" src="orange ball.jpg" alt="Orange Ball Image">
             <div class="overlay-images">
