@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     
     <style>
-        body {
+        /* body {
             display: flex;
             flex-direction: column;
             text-align: center;
             margin: 0;
-            background-color: #ffffff; /* White background */
+            background-color: #ffffff; 
             opacity: 0;
             transition: opacity 2s ease;
             min-height: 100vh;
@@ -41,7 +41,7 @@
 
         footer {
             font-family: 'DM Mono', monospace;
-            margin-top: auto; /* This pushes the footer to the bottom */
+            margin-top: auto; 
             padding: 10px;
             font-size: 10px;
         }
@@ -51,7 +51,7 @@
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
-            min-width: 200px; /* Set your desired minimum width */
+            min-width: 200px; 
             max-width: 450px;
             font-size: 11px;
         }
@@ -73,7 +73,120 @@
         .pics{
             display:inline-block;
             margin-bottom:20px;
+        } 
+            
+        */
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
         }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .work {
+            font-family: 'DM Mono', monospace;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 200px; 
+            max-width: 450px;
+            font-size: 11px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        .pics{
+            display:inline-block;
+            margin-bottom:20px;
+        } 
 
     </style>
 
@@ -81,7 +194,8 @@
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img src="header.jpg" alt="Tanya Chawla">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
 
