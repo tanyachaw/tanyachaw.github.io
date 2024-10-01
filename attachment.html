@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attachment</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+    </style>
+
+ </head>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        
+        <article>
+            <h2>Attachment</h2>
+            <h4>10/1/24</h4>
+            <p>
+                In my senior year of college, I lived with a pet crested gecko named Loki. 
+                He had pupils that would dilate into a black ball when he was happy and become a 
+                thin line when not, which was most of the time. From his glass tank, he mostly saw me 
+                with books on British psychoanalysis, John Bowlby, and Darwin. <br><br>
+
+                Darwin was born to a wealthy doctor. His mom died when he was eight. He was a normal boy - 
+                his biographers wrote that he had been “unmarked by the slightest trace of genius” in his youth.<sup>1</sup>
+                <br><br>
+
+                After his mom’s death, Darwin was sent to boarding school, where he was deemed “unsuccessful.” 
+                His dad once told him "You care for nothing but shooting, dogs, and rat-catching, and you will 
+                be a disgrace to yourself and all your family."<sup>2</sup>
+                <br><br>
+
+                Meanwhile, 86 miles away, a boy named Alfred Russel Wallace was born. 
+                He was a middle-class baby born to a middle-class man who trained in law but never practiced it.
+                <br><br>
+
+                Darwin’s dad pulled him out of boarding school early and pushed him into a medical degree 
+                at the University of Edinburgh. Darwin was disgusted by medicine (the blood in particular). 
+                He was much more interested in zoology, taking walks with a naturalist who believed in evolution 
+                but didn’t know how it worked. Darwin left university without a degree. His dad, anxious that 
+                the kid was going to waste his life, sent Darwin to prepare for the clergy at Cambridge (at the 
+                time, zoology and theology were two sides of the same coin, because of the belief that God designed nature). 
+                <br><br>
+
+                At 22, Darwin’s life took a turn. He was invited to board the HMS Beagle, a royal navy ship, 
+                that was going to sail across the world. Dad thought it was a waste of time. For the next five years, 
+                Darwin dug up fossils, climbed mountains, met savages, witnessed tropical paradise, and wrote 
+                that his mind was “a chaos of delight.”<sup>3</sup> 
+                <br><br>
+
+                That was the year Wallace was pulled out of school not because of a lack of interest, 
+                but a lack of funds. He went to London to learn the trade of surveying, large-scale map making, 
+                with his older brother. He started collecting beetles with a friend, and headed on a voyage to 
+                Brazil when he was 25 to collect more specimens. Later, he set off alone to Southeast Asia. 
+                He figured that living things change over time, though he couldn’t explain how.<br><br>
+
+                He had a fever one day. On a remote island in the Malay archipelago, 
+                he lay bed-ridden with cold and hot fits, having “nothing to do but to think over 
+                any subjects then particularly interesting me.”<sup>4</sup> He thought of Thomas Malthus’ essay 
+                “Principle of Population,” that he read 12 years before. 
+                <br><br>
+
+                Malthus argued that the population grows faster than food production does. 
+                More people than food in the world. This leads to “population pressure,” 
+                which would lead to checks like famine, war, disease, and poverty.<sup>5</sup> 
+                <br><br>
+
+                Wallace considered the animal world. Animals breed much more rapidly than humans, 
+                yet year after year, their population numbers stay stable. Otherwise, the world would 
+                be “densely crowded with those that breed most quickly.” He thought, “why do some die and some live?” 
+                His answer, which “suddenly flashed” upon him, was that only the <i>best fitted</i> lived, 
+                which would necessarily improve the race. He waited for his fever to be over so he could write 
+                the idea down. He wrote a letter to Darwin, knowing he was interested in evolution, hoping the idea 
+                “would be as new to him as it was to [Wallace].”
+                <br><br>
+
+                Darwin was horrified. He’d been working on a book, a magnum opus, on this theory for the past 
+                20 years. “All my originality, whatever it may amount to, will be smashed,”<sup>6</sup> 
+                he wrote to a friend. Darwin read Malthus a while ago, had a similar thought, and began to work quietly. 
+                <br><br>
+
+                Both men, independently, came up with the theory of natural selection. <br><br>
+
+                Wallace’s letter set Darwin into action. He asked his friends for help. 
+                They said the most fair thing to do would be to present his and Wallace’s work side by side, 
+                and then quickly publish <i>On the Origin of Species</i>. Which he did, in 1859, and 
+                revolutionized the world. <br><br>
+
+                Darwin once summarized natural selection in ten words: 
+                “[M]ultiply, vary, let the strongest live and the weakest die.”<sup>7</sup>  
+                Strongest does not mean bulkiest, it means best adapted to the environment. <br><br>
+
+                Author Robert Wright says that if this seems easy to believe, we’re probably not getting it.<sup>8</sup> 
+                <br><br>
+
+                History has conducted experiments, trials and errors, all at random, 
+                to see which traits work best in a given environment. You can imagine it like a choose 
+                your own adventure game, except there have been way more adventures that led to death than to life. 
+                Your line of ancestry somehow always picked the adventure that led to life. Each one of your organs - 
+                your brain, heart, lungs, intestines - is an adaptation that worked for your ancestry. 
+                If you’re here today, my god, what a miracle. <br><br>
+
+                It’s important to mention that not everyone believes in evolution. 
+                No other scientific concept caused so much fury, because no other explained how we got here. 
+                Humans operate with stories about themselves to root their place in the world. 
+                Creationists believe God designed nature. <br><br>
+
+                “It gnaws at their sense of self… If humans are just one of many outcomes of 
+                natural selection, maybe we aren’t so special after all,”<sup>9</sup> writes biologist Jerry Coyne. 
+                <br><br>
+
+                When atomic physicist Pervez A. Hoodboy taught human evolution in Pakistan, 
+                near riots broke out and he had to be escorted out of the lecture hall. Kenneth Chang 
+                quotes him in the NYT: “That’s the one thing that will never be possible to bridge. Your 
+                lineage is what determines your worth.”<sup>10</sup>
+                <br><br>
+
+                Across the world however, the scientific community largely agrees that evolution by natural 
+                selection is an empirical fact.<sup>11,12</sup>
+                <br><br>
+
+                A century later, a man named John Bowlby drew on Darwin’s theory of natural selection, 
+                and many others - object relations theory, control systems theory, ethology and cognitive 
+                psychology - to come up with attachment theory.<sup>13</sup>
+                <br><br>
+
+                Bowlby’s mother believed that parental affection would spoil her children, 
+                so the kids were taken care of by different nannies. At eight, (which I’m realizing 
+                is an age where a lot of children go through life-altering events) Bowlby was sent off 
+                to boarding school. He later told his wife Ursula that he “wouldn’t send a dog away to 
+                boarding school at that age.”<sup>14</sup>
+                <br><br>
+
+                Bowlby proposed that there’s an evolutionary system called the attachment system wired 
+                in human beings. It serves the purpose of promoting survival when we are small and pathetic. 
+                Attachment theory says that our early caregiving experiences organize individual and relational 
+                developmental processes, leaving imprints in our brain that guide our behavior in all future 
+                relationships. Early love dictates our behavior in future love. 
+                <br><br>
+
+                Human babies have the longest period of vulnerability of any species on earth. 
+                For most of our infancy, we’re in need of protection so that we don’t die. 
+                Bowlby began with the observation that across all cultures, babies tend to display a sequence 
+                of reactions after being separated from caregivers. This attachment figure is usually the mother, 
+                but it need not be - it can be anyone who consistently responds. 
+                <br><br>
+
+                The first stage of separation is <i>protest</i>. Take a puppy. Separate the puppy from 
+                his mother and he protests. He paces, scans, barks, scratches, and tries scaling 
+                the walls. His heart rate, body temperature, cortisol levels, and alertness levels rise. 
+                <br><br>
+
+                This protest behavior was for survival. If a baby doesn’t cry when under threat, he might die. <br><br>
+
+                If the screaming and crying doesn’t work, the baby will enter a second stage: <i>despair</i>. 
+                Motor activity slows down. Silence takes hold. Alertness turns into lethargy. 
+                Appetite suppresses. Bodily rhythms are disrupted. Heart rate drops, 
+                sleep changes (with less dreaming and more spontaneous nocturnal awakenings). 
+                Circadian rhythms shift. The level of growth hormone in the blood will plummet. Immune regulation, 
+                hormone levels, and cardiovascular function deteriorate.<sup>15</sup>
+                <br><br>
+
+                This strategy also made sense in terms of survival. Excessive protest without response may 
+                result in accident, injury, or attracting predators. Hence, if going on the offensive - protesting - 
+                fails, the baby goes on the defensive. 
+                <br><br>
+
+                The third and final stage after despair is detachment. The caregiver can return and 
+                the baby won't react much. Bowlby thought the evolutionary purpose of detachment is 
+                to pave the way for new bonds with other potential caregivers.<sup>16</sup>
+                <br><br>
+
+                This theory overtook the Freudian “cupboard love” theory, which said that the baby values 
+                food over love and values the mother because she feeds him. Attachment theory proposed 
+                that the baby valued a mother’s love more than her ability to give food. 
+                Harry Harlow’s famous surrogate mother experiment is an example of this.
+                <br><br>
+
+                Harlow worked with isolated baby monkeys. He gave them two choices for a surrogate 
+                mother: A wire mesh mother with a feeding bottle and a soft, terry cloth mother. 
+                Harlow found that the baby monkeys spent significantly more time with the terry 
+                cloth mother than they did with the wire one with food. They preferred the comfort and 
+                security of a soft, cloth-covered surface, rather than just food without warmth.<sup>17</sup>
+                <br><br>
+
+                Babies continuously monitor their mother’s expressions. Take the visual cliff 
+                experiment. A group of one year olds were left to crawl on a surface that was half solid, 
+                half clear plexiglass. Every time the baby reached the edge, he faced uncertainty - he 
+                could fall and die. The baby then looked at the mother. If the mother’s face was calm, 
+                the baby crossed. If it showed signs of distress, the baby stopped and cried.<sup>18</sup>
+                <br><br>
+
+                Additionally, when a study made a baby interact with his mother through a screen, 
+                both mother and child were perfectly happy. But if you put the baby in front of a 
+                video recording of his mother, he grew distraught. Babies thus require facial synchrony.<sup>19</sup>
+                <br><br>
+
+                The main question babies are asking in infancy is whether their primary caregiver 
+                will be there for them when they need them. The answer determines their style of attachment, 
+                which were first distinguished by psychologist Mary Ainsworth.
+                <br><br>
+
+                When a baby cries to signal distress and is immediately soothed by mom, the baby’s 
+                attachment radar shuts down. They let out a sigh of relief, gain confidence, and turn 
+                attention to other things, like play or exploration. This person will come out of childhood 
+                with a positive view of themselves and other people, believing they are loveable and 
+                others reliable and trustworthy. This is secure attachment.
+                <br><br>
+
+                When a baby cries and is sometimes soothed and sometimes not, the baby becomes 
+                hypervigilant about keeping the caregiver around. They go the extra mile, protesting 
+                and crying even more to get the caregiver’s attention. This child will most likely 
+                pick up a belief that they need to work for love, will have a negative view of the 
+                self and a positive view of others. This is anxious, a form of insecure attachment.
+                <br><br>
+
+                When a baby cries and isn’t soothed at all, the baby shuts down and withdraws. 
+                The child has discovered that the protesting doesn’t work, that emotions must be 
+                dealt with on their own. This looks like repression. This child will pick up a 
+                belief that others cannot be trusted and will be wary of intimacy. They will have a 
+                positive view of the self and a negative view of others. This is avoidant attachment, 
+                another form of insecure attachment.
+                <br><br>
+
+                You can watch a form of this in action <a href="https://www.youtube.com/watch?v=DRejV6f-Y3c">here</a>. 
+                <br><br>
+
+                Those with insecure attachment styles generally believe relationships will 
+                end up being hurtful, rejecting, or unsafe.<sup>20</sup> According to the theory, this 
+                is wired into them since childhood, something they will most likely be unaware 
+                of until they step into intimacy in their adult life.
+                <br><br>
+
+                This reminds me of a Sally Field quote:
+                <br><br>
+
+                "The task as a grown up person is to realize what garment you knit 
+                for yourself to survive as a child, in the winter of your childhood. But when you're 
+                in the summer, so to speak, of your adulthood, you're boiling hot and you can't figure out, 
+                "Why am I so fucking hot all the time?" And it's because you can't take off this garment 
+                that you knitted for yourself as a child that you no longer need. You can't realize, 
+                you don't realize that this way of behaving, this functional way that your brain 
+                taught you to behave, to survive, it gets in your way now."<sup>21</sup>
+                <br><br>
+
+                Anxious and avoidants are attracted to one another. They might zap 
+                together like magnets. If they zap instantly, it’s likely historical. A bad sign.
+                <br><br> 
+
+                Both reinforce each other’s core beliefs. The anxious confirms to the avoidant 
+                their need for independence. The avoidant confirms to the anxious that they will be 
+                abandoned and are unworthy of love. They feel familiar, as they’ve adapted to deal 
+                with one another, even though they no longer need the adaptation. When the avoidant 
+                pushes people away, and the anxious works incessantly for love, they are operating 
+                by the mental model that supported their survival in infancy. It’s wired in. 
+                This is called the “anxious-avoidant trap.”
+                <br><br>
+
+                It comes down to a lack of love. The anxious baby got tastes of it, 
+                drops of elixir that kept them alive, so they did everything to keep getting it. 
+                The avoidant baby barely got any, perhaps they never tasted it, so they had to 
+                learn to live without it. 
+                <br><br>
+
+                The escape? Self-awareness. A look into the past. This Jung quote:
+                <br><br>
+
+                “To love someone else is easy, but to love what you are, the thing that is yourself, 
+                is just as if you were embracing a glowing red-hot iron: it burns into you and that is very painful.
+                Therefore, to love somebody else in the first place is always an escape which we 
+                all hope for, and we all enjoy it when we are capable of it. But in the long run, it comes back on us.
+                You cannot stay away from yourself forever, you have to return, have to come to that 
+                experiment, to know whether you really can love. That is the question—whether you can 
+                love yourself, and that will be the test.”<sup>22</sup>
+                <br><br>
+
+                Even if they confront their past, achieve self-love and self-awareness, the anxious 
+                will still feel an alarm bell going off in their chest when a loved one is perceived to pull away. 
+                A radar. A SOS signal. Distance likely meant death. The avoidant will still feel the alarm 
+                when someone comes too close to them. Something in them, subconsciously, will tell them to 
+                push the other away. Closeness likely meant death. Degrees of anxiety and avoidance will 
+                always remain, as Bowlby said, “from the cradle to the grave.”
+                <br><br>
+
+                After Darwin returned from his voyage, he suffered from a mystery illness for most of 
+                his adult life. It was a strange combination of symptoms that no doctor could diagnose. 
+                Chronic fatigue and exhaustion, severe gastrointestinal problems, nausea, frequent vomiting, 
+                a swimming head, severe headaches, trembling, insomnia, joint pain, rashes, eczema, mouth ulcers, 
+                boils, tooth and gum problems, heart palpitations, poor resistance to infections, depression.<sup>23</sup> 
+                The man, in his characteristic politeness, said “Even ill-health, though it has annihilated several 
+                years of my life, has saved me from the distractions of society and amusement.”<sup>24</sup>
+                <br><br>
+
+                At 81, Bowlby’s last work was a biography of Darwin. Bowlby argued that his lifelong ailments 
+                were a result of repressed feelings to his mother’s death when Darwin was 8.<sup>25</sup> 
+                Bowlby died two years later. 
+                <br><br>
+
+                Loki, the crested gecko I was living with, is a solitary animal. He cannot cohabitate 
+                with other geckos, because he’ll likely kill them or just wither and die. Reptile forums say 
+                geckos like Loki do not seek friendship and do not feel loneliness. He isn’t “wired for connection.” 
+                He’s wired to swing from artificial branch to branch during the night time, sleep during the day, 
+                and eat Watermelon-flavored whey protein every two days. Sometimes I wonder whose life is better. 
+                <br><br>
+
+                <u>Citations</u>:<br><br>
+
+                <sup>1</sup>  Clark, J. (1984). A history of Darwinism: Evolutionary thought from the ancient Greeks to the modern synthesis (p. 6). Cambridge University Press.
+                <br>
+
+                <sup>2</sup>  Darwin, C. (1892). The autobiography of Charles Darwin and selected letters (pp. 8–11). New York: D. Appleton and Company.
+                <br>
+
+                <sup>3</sup>  Darwin, C. (1845). A naturalist’s voyage round the world. John Murray.
+                <br>
+
+                <sup>4</sup> Wallace, A. R. (1905). My life: A record of events and opinions (Vol. 1). London: Chapman and Hall.
+                <br>
+
+                <sup>5</sup> Malthus, T. R. (1798). An essay on the principle of population. J. Johnson.
+                <br>
+
+                <sup>6</sup> Darwin, C. (1858). Letter no. 2285: Darwin, C. R. to Hooker, J. D. Darwin Correspondence Project. 
+                <br>
+
+                <sup>7</sup> Darwin, C. (1968). The origin of species. New York: Penguin Books.
+                <br>
+
+                <sup>8</sup> Wright, R. (1994). The moral animal: Why we are the way we are: The new science of evolutionary psychology. Vintage.
+                <br>
+
+                <sup>9</sup> Coyne, J. A. (2009). Why evolution is true. Viking.
+                <br>
+
+                <sup>10</sup> Chang, K. (2009, November 2). Creationism, minus a young Earth, emerges in the Islamic world. The New York Times. 
+                <br>
+
+                <sup>11</sup> InterAcademies Panel on International Issues. (2006, May). IAP statement on the teaching of evolution. InterAcademy Partnership. 
+                <br>
+
+                <sup>12</sup> National Science Teachers Association. (2003). NSTA position statement: The teaching of evolution. National Science Teachers Association.
+                <br>
+
+                <sup>13</sup> Bosmans, G., Bakermans-Kranenburg, M. J., Vervliet, B., Verhees, M. W. F. T., & van IJzendoorn, M. H. (2020). A learning theory of attachment: Unraveling the black box of attachment development. Neuroscience & Biobehavioral Reviews, 113, 287-298. 
+                <br>
+
+                <sup>14</sup> Ross, L. R. (2014). Reading Ursula Bowlby’s Letters (1939-1940): A Chronicle of First Time Motherhood. Journal of the Motherhood Initiative for Research and Community Involvement, 5(1). 
+                <br>
+
+                <sup>15</sup> Lewis, T., Amini, F., & Lannon, R. (2001). A general theory of love. Vintage.
+                <br>
+
+                <sup>16</sup> Cassidy, J., & Shaver, P. R. (Eds.). (1999). Handbook of attachment: Theory, research, and clinical applications. The Guilford Press. 
+                <br>
+
+                <sup>17</sup> Harlow's classic studies revealed the importance of maternal contact. (n.d.). Association for Psychological Science. 
+                <br>
+
+                <sup>18</sup> Sorce, J. F., Emde, R. N., Campos, J. J., & Klinnert, M. D. (1985). Maternal emotional signaling: Its effect on the visual cliff behavior of 1-year-olds. Developmental Psychology, 21(1), 195–200. 
+                <br>
+
+                <sup>19</sup> Keller, H. (2019). The function of emotions in early infant communication and development. ResearchGate. 
+                <br>
+
+                <sup>20</sup> Doyle, C., & Cicchetti, D. (2017). From the cradle to the grave: The effect of adverse caregiving environments on attachment and relationships throughout the lifespan. Clinical Psychology: Science and Practice, 24(2), 203–217. 
+                <br>
+
+                <sup>21</sup> Field, S. Julia gets wise. Lemonada Media. 
+                <br>
+
+                <sup>22</sup> Jung, C. G. (1988). Zarathustra seminars. Princeton University Press.
+                <br>
+
+                <sup>23</sup> Campbell, A. K., & Matthews, S. B. (2005). Darwin’s illness revealed. Postgraduate Medical Journal, 81(954), 248–251. 
+                <br>
+
+                <sup>24</sup> Darwin, C. (n.d.). Darwin online: The autobiography of Charles Darwin. Darwin Online. 
+                <br>
+
+                <sup>25</sup> Bowlby, J. (1991). Charles Darwin: A new life. W.W. Norton & Company.
+                <br>
+
+
+
+
+
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script>
+        // Reset opacity to 0 when the page is loaded or refreshed
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
