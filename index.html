@@ -139,6 +139,19 @@
                 font-size: 10px;
             }
 
+            button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
 
    </style>
 
@@ -146,15 +159,16 @@
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img id="headerImage" class="header-default" src="header.jpg" alt="Tanya Chawla">
             <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
 
-    <main>    
-        
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button>
+     
         <div class="image-container">
-            <img class="orange-ball-image" src="orange ball.jpg" alt="Orange Ball Image">
+            <img class="orange-ball-image" src="orange ball.png" alt="Orange Ball Image">
             <div class="overlay-images">
                 <a href="work">
                     <img class="work-image default" src="work.png" alt="Work Image">
@@ -178,12 +192,7 @@
         &copy; 2024 Tanya Chawla
     </footer>
 
-    <script>
-        // Reset opacity to 0 when the page is loaded or refreshed
-        document.addEventListener('DOMContentLoaded', function () {
-            document.body.style.opacity = 1;
-        });
-    </script>
+    <script src="main.js"></script>
 
 </body>
 </html>

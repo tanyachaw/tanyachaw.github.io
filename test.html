@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>writing</title>
+    <title>Test</title>
 
     <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             display: flex;
@@ -21,6 +22,7 @@
             opacity: 0;
             transition: opacity 2s ease;
             min-height: 100vh;
+            transition: background-color 0.5s ease, color 0.5s ease; 
         }   
 
 
@@ -30,6 +32,7 @@
                 position: relative; 
                 display: inline-block; 
                 height: 100px;
+
             }
 
             header a {
@@ -108,24 +111,14 @@
             margin-left: 50px;
         }
 
-        p {
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
             font-family: 'DM Mono', monospace;
-            padding-top: 10px;
-            max-width: 350px; /* Adjust this width as needed */
-            margin: 0 auto;   /* Center the paragraph */
-            word-wrap: break-word; /* Ensure long words wrap properly */
-            line-height: 1.8;
-            font-size: 12px;
-            }
-    
-        p a {
-            display: block; 
-            margin-top: 5px; 
-         }
-
-        .days-links a {
-            display: inline;
-        }
+            font-size: 11px;
+            text-align: left;
+        }  
 
         h2 {
             text-align: center;
@@ -143,7 +136,20 @@
             }
         }
 
-        
+        .bar {
+            background-color: rgb(5, 174, 2);
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+           
+            color:white;
+            line-height: 30px;
+            padding-left: 10px;
+
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+
         button {
             background: white;
             font-size: 10px;
@@ -163,40 +169,41 @@
 
     </style>
 
- </head>
+</head>
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img id="headerImage" class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
             <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
 
     <main>
 
-        <button id="button1" onclick="dark()">dark mode</button> <br><br>
+        <button id="button1" onclick="dark()">dark mode</button>
+        
+        <article>
+            <h2>What is this</h2>
+            <h4>11/18/24</h4>
+            <p>Intro TK TK TK</p>
+            
+            <h3 id="food"></h3>
+            <p>Calories</p>
+            <div class="bar" id="bar1"></div>
+            <p>Carbs</p>
+            <div class="bar" id="bar2"></div>
+            <p>Protein</p>
+            <div class="bar" id="bar3"></div>
+            <p>Fats</p>
+            <div class="bar" id="bar4"></div>
 
-        <img src="writing.png" id="writingImage" alt="writing" width="50px">
-        <p>
-            
-            <a href="attachment">Attachment</a>
-            <a href="caffeine" style="margin-bottom: 3px;">Caffeine</a>
-            <span class="days-links">
-                <!-- <a href="august21">Aug 21st</a>, -->
-                <a href="august13">Aug 13th</a>,
-                <a href="july29">July 29th</a>, 
-                <!-- <a href="july20">July 20th</a>, -->
-                <a href="july16">July 16th</a> 
-            </span><br>
-            <a href="runclubs">Run clubs in NYC/BK</a>
-            <a href="graduation">Graduation</a>
-            <a href="finance">Personal finance spiel</a>
-            <a href="22">22 things learned at (almost) 22</a>
-            <a href="cycles">The menstrual cycle</a>
-            <a href="mechanism">Mechanism design</a>
-        </p>
-           
-            
+            <button onclick="egg()">Egg</button>
+            <button onclick="americano()">Chicken Breast</button>
+            <button onclick="show2019()">Salmon</button>
+            <button onclick="show2019()">Whey protein</button>
+            <button onclick="show2019()">Tuna can</button>
+            <button onclick="show2019()">Quinoa</button>
+        </article>
     </main>
     
 
@@ -213,6 +220,7 @@
         </div> 
     </footer>
 
-    <script src="writing.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>

@@ -112,6 +112,23 @@
             color: rgb(249, 240, 158)
         }
 
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
     </style>
 
  </head>
@@ -124,6 +141,8 @@
     </header>
 
     <main>
+        <button id="button1" onclick="dark()">dark mode</button> <br><br>
+        
         <img src="headshot3.png" alt="A picture of me" width="300" height="auto" style="margin-top: 10px;">
 
         <div class="introduction">
@@ -156,12 +175,7 @@
         </div> 
     </footer>
 
-    <script>
-        // Reset opacity to 0 when the page is loaded or refreshed
-        document.addEventListener('DOMContentLoaded', function () {
-            document.body.style.opacity = 1;
-        });
-    </script>
+    <script src="about.js"></script>
 
 </body>
 </html>
