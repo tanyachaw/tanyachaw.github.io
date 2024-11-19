@@ -12,70 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     
     <style>
-        /* body {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin: 0;
-            background-color: #ffffff; 
-            opacity: 0;
-            transition: opacity 2s ease;
-            min-height: 100vh;
-        }   
-
-
-        header {
-            text-align: center;
-            padding-top: 40px; 
-        }
-
-        main {
-            flex-grow: 1;
-        }
-
-        img { 
-            max-width: 300px;
-            height: auto;
-            top: 30px;
-        }
-
-        footer {
-            font-family: 'DM Mono', monospace;
-            margin-top: auto; 
-            padding: 10px;
-            font-size: 10px;
-        }
-
-        .work {
-            font-family: 'DM Mono', monospace;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            min-width: 200px; 
-            max-width: 450px;
-            font-size: 11px;
-        }
-
-        .left, .right {
-            display: inline-block;
-        }
-
-        .left {
-            text-align: left;
-            margin-right: 50px;
-        }
-
-        .right {
-            text-align: right;
-            margin-left: 50px;
-        }
-
-        .pics{
-            display:inline-block;
-            margin-bottom:20px;
-        } 
-            
-        */
 
         body {
             display: flex;
@@ -188,20 +124,40 @@
             margin-bottom:20px;
         } 
 
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+
     </style>
 
  </head>
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img class="header-default" src="header.jpg" alt="Tanya Chawla">
+            <img id = "headerImage" class="header-default" src="header.jpg" alt="Tanya Chawla">
             <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
 
     <main>
 
-       <img src="work.png" alt="work" width="40px"> 
+        <button id="button1" onclick="dark()">dark mode</button> <br><br>
+
+        <img id="workImage" src="work.png" alt="work" width="40px"> 
         <div class="work"> 
 
             <!-- <u><b>Pushkar</b></u>
@@ -283,12 +239,7 @@
         </div> 
     </footer>
 
-    <script>
-        // Reset opacity to 0 when the page is loaded or refreshed
-        document.addEventListener('DOMContentLoaded', function () {
-            document.body.style.opacity = 1;
-        });
-    </script>
+    <script src="main.js"></script>
 
 </body>
 </html>
