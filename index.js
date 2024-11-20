@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 function dark() {
     const body = document.body;
     const button = document.querySelector('#button1');
+    const headerImage = document.getElementById('headerImage');
     const links = document.querySelectorAll('a');
  
     if (body.style.backgroundColor === 'black') {
      // Switch to light mode
-     body.style.backgroundColor = 'rgb(142, 182, 142)';
-     body.style.color = 'white';
+     body.style.backgroundColor = 'white';
+     body.style.color = 'black';
+     headerImage.src = 'header.png'; // Replace with your light mode header image path
      button.textContent = 'dark mode'; // Update button text
  
      links.forEach(link => {
@@ -21,6 +23,7 @@ function dark() {
  
      body.style.backgroundColor = 'black';
      body.style.color = 'white';
+     headerImage.src = 'header white.png'
      button.textContent = 'light mode';
  
      links.forEach(link => {
@@ -28,3 +31,7 @@ function dark() {
      });
      }
  }
+
+
+
+
