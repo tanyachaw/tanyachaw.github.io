@@ -112,7 +112,7 @@
         }
 
         article {
-            max-width: 500px;  
+            max-width: 500px;
             margin: 0 auto; /* Center the article */
             padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
             font-family: 'DM Mono', monospace;
@@ -167,6 +167,10 @@
             margin-bottom: 10px;
         }
 
+        #source {
+            font-size:10px;
+        }
+
     </style>
 
 </head>
@@ -185,9 +189,49 @@
         <article>
             <h2>Air quality in Delhi</h2>
             <h4>11/TK/24</h4>
-            <canvas id="aqiChart" width="800" height="500"></canvas> <br>
-            <button id="toggleDelhi">Show Delhi</button>
-            <button id="toggleDC">Show DC</button>
+            <p>
+                Last summer, DC was facing bad air quality. Stepping out, the subdued sun and smoke in the air
+                felt familiar. I spent part of my childhood in Delhi. This past week, the air quality index (AQI) in Delhi 
+                reached 490, categorizing the air as "severe plus." Compare its levels to DC below. 
+            </p>
+            <canvas id="aqiChart" width="800" height="500"></canvas>
+            <p id="source"><i>Source: <a href="https://cpcb.nic.in/">Central Pollution Control Board</a>, Govt. of India; <a href="https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker">EPA Air Quality Tracker</a></i></p>
+            <button id="toggleDC" style="display: block; margin: 0 auto;">Show DC</button>
+            
+            <br>  
+
+            <p>
+                AQI ranges from 0 to 500. It's calculated by TK TK, with higher numbers meaning higher hazards. Scientists at Berkeley
+                Earth came up with a way to convert AQI to the number of cigarettes breathed per day. 
+
+                <br><br>
+                
+                <canvas id="cigarettesChart" width="800" height="580"></canvas>
+
+                <br><br>
+                
+                
+                The government announced that <a href="https://timesofindia.indiatimes.com/city/delhi/delhi-air-pollution-live-updates-toxic-air-aqi-level-grap-4-restrictions-schools-private-offices/liveblog/115468723.cms">50 percent</a>
+                of its workforce will work from home. Nonessential construction and demolition has been banned. 
+                Within the past week, schools closed down, offices went remote, construction and demolition worked stopped. 
+
+                <br><br>
+
+                The Delhi government is urging the central govt. to let them use <a href="https://news.abplive.com/cities/what-is-artificial-rain-how-cloud-seeding-works-as-delhi-govt-proposes-measure-to-combat-air-pollution-1732330">artifical rain</a> 
+                as a solution.
+
+                <br><br>
+
+                What's happening? Delhi's AQI problem is cyclical. Air quality declines in November, as seen by the peaks
+                in Google search trends of the phrase "delhi aqi." The peak in March of 2020 happened because of the opposite reason - Delhi's 
+                air was <a href="https://www.nytimes.com/2020/04/08/world/asia/india-pollution-coronavirus.html">clean</a>
+                for the first time after lockdown was imposed. The AQI dropped to 38. 
+
+            </p>
+            <canvas id="searchTrendsChart" width="800" height="500"></canvas>
+            <p>
+                Why November? Diwali, for one. And post-harvest agricultural waste burning. 
+            </p>
         
 
             
