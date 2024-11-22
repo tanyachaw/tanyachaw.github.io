@@ -116,7 +116,7 @@
             margin: 0 auto; /* Center the article */
             padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
             font-family: 'DM Mono', monospace;
-            font-size: 11px;
+            font-size: 10px;
             text-align: left;
         }  
 
@@ -171,6 +171,33 @@
             font-size:10px;
         }
 
+        #aqi-chart {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+            .aqi-layer {
+                padding: 6px;
+                color: #fff;
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        .green { background-color: rgba(92, 200, 101, 1); }
+        .yellow { background-color: rgba(245, 190, 26, 1); }
+        .orange { background-color: #ff7e00; }
+        .red { background-color: #ff0000; }
+        .purple { background-color: rgba(95, 0, 180, 1); }
+        .maroon { background-color: rgba(110, 0, 0, 1); }
+
+        .aqi-layer:hover {
+            opacity: 0.7; /* Adjust to your preference */
+        }
     </style>
 
 </head>
@@ -190,47 +217,172 @@
             <h2>Air quality in Delhi</h2>
             <h4>11/TK/24</h4>
             <p>
-                Last summer, DC was facing bad air quality. Stepping out, the subdued sun and smoke in the air
-                felt familiar. I spent part of my childhood in Delhi. This past week, the air quality index (AQI) in Delhi 
-                reached 490, categorizing the air as "severe plus." Compare its levels to DC below. 
-            </p>
+                
+                Last summer, DC’s air quality index (AQI) climbed over 200, the sun became red, and heavy smoke 
+                filled the air. Stepping out of my apartment, the air felt nostalgic and familiar. I spent part 
+                of my childhood in Delhi. This past week, AQI in Delhi reached 490, categorizing the air quality 
+                as "severe plus." <br><br>
+
+                Schools closed down, offices went remote, nonessential construction and demolition was banned, 
+                trains were canceled, and flights were diverted or delayed. Some people brought out their N95s, 
+                some people roamed around without, and some, like street vendors, rickshaw drivers, or the homeless, 
+                didn’t have a choice. Angry reddit threads piled up. Many described the city as a “gas chamber.”
+                <br><br>
+
             <canvas id="aqiChart" width="800" height="500"></canvas>
-            <p id="source"><i>Source: <a href="https://cpcb.nic.in/">Central Pollution Control Board</a>, Govt. of India; <a href="https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker">EPA Air Quality Tracker</a></i></p>
-            <button id="toggleDC" style="display: block; margin: 0 auto;">Show DC</button>
+            <p id="source"><i>Sources: <a href="https://cpcb.nic.in/">Central Pollution Control Board</a>, Govt. of India; <a href="https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker">EPA Air Quality Tracker</a>; <a href="https://www.iqair.com/us/">IQ Air</a>; 
+            <a href="https://epd.punjab.gov.pk/aqi?field_aqr_date_value=10%2F31%2F2024">EP&CCD Punjab</a>.</i></p>
+            <br>
+            <button id="toggleSF">Show SF</button>
+            <button id="toggleDC">Show DC</button>
+            <button id="toggleBR">Show Berlin</button>
+            <button id="toggleBE">Show Beijing</button>
+            <!-- <button id="toggleIS">Show Islamabad</button> -->
+            <button id="toggleLA">Show Lahore</button>
             
-            <br>  
+            <br> <br>
 
             <p>
-                AQI ranges from 0 to 500. It's calculated by TK TK, with higher numbers meaning higher hazards. Scientists at Berkeley
-                Earth came up with a way to convert AQI to the number of cigarettes breathed per day. 
+                To make sense of the graph, US AQI ranges from 0 to 500 (different countries have different standards). It was developed by the EPA and is calculated by converting measured pollutant concentrations - fine particles (PM2.5 and PM10), ground-level ozone, sulfur dioxide, nitrogen dioxide, and carbon monoxide - to a uniform index. 
+            </p>
+            <br>
+
+                <div id="aqi-chart">
+                    <div class="aqi-layer green">
+                        <span>0-50: Good</span>
+                    </div>
+                    <div class="aqi-layer yellow">
+                        <span>51-100: Moderate</span>
+                    </div>
+                    <div class="aqi-layer orange">
+                        <span>101-150: Unhealthy for Sensitive Groups</span>
+                    </div>
+                    <div class="aqi-layer red">
+                        <span>151-200: Unhealthy</span>
+                    </div>
+                    <div class="aqi-layer purple">
+                        <span>201-300: Very Unhealthy</span>
+                    </div>
+                    <div class="aqi-layer maroon">
+                        <span>301-500: Hazardous</span>
+                    </div>
+                </div> 
+                <br>        
+            <p>
+                Delhi suffers mainly from fine particulates, PM2.5, which is a tiny particle made up of toxic substances 
+                that settle deep into our lungs and organs, wreaking havoc on our immune defenses. Air pollution in 
+                Delhi shortens the lives of its residents by 11.9 years, according to the 
+                <a href="https://aqli.epic.uchicago.edu/country-spotlight/India/">Air Quality Life Index</a> (AQLI) at UChicago. 
+                A <a href="https://pubmed.ncbi.nlm.nih.gov/34472517/">2021 Study</a>
+                found that adolescent children living in Delhi had a high prevalence of asthma, respiratory symptoms, 
+                allergic rhinitis, and eczema that was strongly associated with a high body mass index.
+ 
+
+                <br><br>
+
+                I kept seeing cigarette smoke comparisons in news headlines, so I took PM2.5 concentration data from the 
+                Central Pollution Control Board and converted it to a number of cigarettes passively inhaled using 
+                Berkeley Earth’s 
+                <a href="https://berkeleyearth.org/air-pollution-and-cigarette-equivalence/">rule of thumb</a>: 22.2 μg/m3 of PM2.5 is 1 cigarette.
+
 
                 <br><br>
                 
-                <canvas id="cigarettesChart" width="800" height="580"></canvas>
-
-                <br><br>
-                
-                
-                The government announced that <a href="https://timesofindia.indiatimes.com/city/delhi/delhi-air-pollution-live-updates-toxic-air-aqi-level-grap-4-restrictions-schools-private-offices/liveblog/115468723.cms">50 percent</a>
-                of its workforce will work from home. Nonessential construction and demolition has been banned. 
-                Within the past week, schools closed down, offices went remote, construction and demolition worked stopped. 
+                <canvas id="cigarettesChart" width="800" height="500"></canvas>
 
                 <br><br>
 
-                The Delhi government is urging the central govt. to let them use <a href="https://news.abplive.com/cities/what-is-artificial-rain-how-cloud-seeding-works-as-delhi-govt-proposes-measure-to-combat-air-pollution-1732330">artifical rain</a> 
-                as a solution.
-
-                <br><br>
-
-                What's happening? Delhi's AQI problem is cyclical. Air quality declines in November, as seen by the peaks
-                in Google search trends of the phrase "delhi aqi." The peak in March of 2020 happened because of the opposite reason - Delhi's 
+                What's happening? Delhi's AQI problem is cyclical. We can see the cycle through google search trend data of the phrase “delhi aqi.” 
+                Air quality declines in November, as seen by the peaks in Google searches. 
+                The peak in March of 2020 happened because of the opposite reason - Delhi's 
                 air was <a href="https://www.nytimes.com/2020/04/08/world/asia/india-pollution-coronavirus.html">clean</a>
-                for the first time after lockdown was imposed. The AQI dropped to 38. 
+                for the first time after lockdown was imposed (the AQI dropped to 38).
 
             </p>
-            <canvas id="searchTrendsChart" width="800" height="500"></canvas>
+                <canvas id="searchTrendsChart" width="800" height="600"></canvas>
             <p>
-                Why November? Diwali, for one. And post-harvest agricultural waste burning. 
+                What happens in November? Diwali, for one. Post-harvest agricultural waste burning. But most importantly, the winter. 
+
+                <br><br>
+
+                Uttar Pradesh, Punjab, and Haryana, key agricultural states close to Delhi, have 
+                <a href="https://earthobservatory.nasa.gov/images/84680/stubble-burning-in-northern-india#:~:text=In%20order%20to%20quickly%20prepare,debris%20in%20October%20and%20November.">two growing seasons</a>:
+                May to September (Kharif) and November to April (Rabi). Many farmers plant rice in May and wheat in November, 
+                and burn their fields in November to get rid of the rice debris. This practice, called stubble burning, is illegal, 
+                but it’s also the quickest and cheapest way to get fields ready for wheat. 
+                Paying government fines is reportedly 
+                <a href="https://indianexpress.com/article/india/crop-burning-air-pollution-aqi-punjab-farmers-5400106/">cheaper</a> than disposing of harvest waste. 
+
+                <br><br>
+
+                The same situation is playing out 263 miles away in Pakistan’s Lahore. As the city’s 
+                AQI reached 500, the city went into “green lockdown:” schools, offices, bazaars, and public spaces 
+                have been closed. Hundreds have been hospitalized. UNICEF’s representative in Pakistan said the smog 
+                was so bad that it was 
+                <a href="https://www.bbc.com/news/articles/cm20k76d5xno">visible from space</a>. 
+                And one of the causes repeatedly mentioned is stubble burning. 
+
+                <br><br>
+
+                But stubble burning is 
+                <a href="https://www.mdpi.com/2071-1050/15/5/4209">estimated</a> to only make up about 3-4% of the air pollution in Delhi. 
+                Pollution comes from vehicle exhaust (10-30%), road and construction dust (10-30%), power plants 
+                (10-30%), cooking and heating (10-30%), open waste burning (5-15%), dust storms (&lt;5%), and Diwali 
+                firecrackers (&lt;1%). In Pakistan, the AQLI <a href="https://aqli.epic.uchicago.edu/wp-content/uploads/2019/02/Pakistan-Report.pdf">suggests</a> 
+                that 45% of the air pollution comes from vehicle 
+                emissions and 40% comes from industrial emissions. 
+
+                <br><br>
+
+            </p>
+
+                <canvas id="pollutionChart" width="800" height="500"></canvas>
+
+            <p>
+                The winter is also a strong trap for pollution. Delhi in the winter doesn’t have 
+                the volume of wind needed to disperse emissions like in the monsoon. At the same time, 
+                the city sees a rise in emissions from burning coal, biomass, and waste for warmth.
+
+                <br><br>
+
+                <b>What’s the government doing about it?</b>
+
+                <br><br>
+
+                The Delhi government is looking into inducing artificial rain, but until they get approval from the 
+                federal government, <a href="https://www.telegraphindia.com/india/delhi-deploys-114-water-sprinkling-tankers-to-tackle-air-pollution/cid/1837564">114 water tankers</a> have been 
+                deployed to sprinkle water around the city. 
+
+                <br><br>
+
+                Delhi’s considering the odd-even experiment again, where vehicles with registration 
+                numbers ending in odd numbers could drive on odd days and even numbers on even days. 
+                When it was implemented in January 2016, there was some improvement, but April 2016 and 
+                November 2019’s attempts saw no noticeable difference in pollution. 
+
+                <br><br>
+
+                Long-term solutions include increasing infrastructure for public transportation, 
+                walking, and cycling; promoting the use of clean fuels, enforcing emissions standards for 
+                industries, improving waste management, and increasing the city’s green cover. 
+                A <a href="https://www.sciencedirect.com/science/article/abs/pii/S0269749113001838">2013 study</a> 
+                on trees in cities found that trees in New York removed up to 64,6 tonnes of PM2.5 annually. 
+
+                <br><br>
+
+                In 2023, the <a href="https://www.iqair.com/us/world-most-polluted-cities">ten cities</a> with the highest air pollution were all located in South Asia, 
+                with India accounting for nine of them. In 1998, international environmental agencies drew 
+                attention to transboundary air pollution in South Asia. They called the initiative the 
+                <a href="http://www.rrcap.ait.ac.th/male">Malé declaration</a>. 
+                Bangladesh, Bhutan, India, Iran, Maldives, Nepal, Pakistan and Sri Lanka joined and 
+                were supposed to collaborate to monitor and improve South Asian air. But this initiative hasn’t 
+                gone anywhere. 
+
+                <br><br>
+
+                Whether it’s through collaboration between countries or ruling parties, 
+                the governments must come up with a long-term plan of action for air pollution. 
+
             </p>
 
             <br><br>
