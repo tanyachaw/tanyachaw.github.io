@@ -540,7 +540,7 @@ const pollutionChart = new Chart(pollutionCtx, {
         responsive: true,
         title: {
             display: true,
-            text: 'Air Pollution in Delhi: Estimated Percentage Contribution by Sector'
+            text: 'Annual Air Pollution Source Breakdown in Delhi'
         },
         scales: {
             yAxes: [{
