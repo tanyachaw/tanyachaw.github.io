@@ -167,6 +167,32 @@
             margin-bottom: 10px;
         }
 
+        #map {
+            width: 70%;
+            margin: auto;
+        }
+        .tooltip {
+            position: absolute;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+            display: none;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        path {
+            cursor: pointer;
+            transition: fill 0.3s ease;
+        }
+        path:hover {
+            opacity: 0.8;
+        }
+
     </style>
 
 </head>
@@ -185,24 +211,9 @@
         <article>
             <h2>What is this</h2>
             <h4>11/18/24</h4>
-            <p>Intro TK TK TK</p>
+            <div id="map"></div>
+            <div class="tooltip" id="tooltip"></div>
             
-            <h3 id="food"></h3>
-            <p>Calories</p>
-            <div class="bar" id="bar1"></div>
-            <p>Carbs</p>
-            <div class="bar" id="bar2"></div>
-            <p>Protein</p>
-            <div class="bar" id="bar3"></div>
-            <p>Fats</p>
-            <div class="bar" id="bar4"></div>
-
-            <button onclick="egg()">Egg</button>
-            <button onclick="americano()">Chicken Breast</button>
-            <button onclick="show2019()">Salmon</button>
-            <button onclick="show2019()">Whey protein</button>
-            <button onclick="show2019()">Tuna can</button>
-            <button onclick="show2019()">Quinoa</button>
         </article>
     </main>
     
@@ -220,7 +231,7 @@
         </div> 
     </footer>
 
-    <script src="main.js"></script>
+    <script src="test.js"></script>
 
 </body>
 </html>
