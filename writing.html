@@ -116,7 +116,7 @@
             word-wrap: break-word; /* Ensure long words wrap properly */
             line-height: 1.8;
             font-size: 12px;
-            }
+        }
     
         p a {
             display: block; 
@@ -161,6 +161,19 @@
             margin-bottom: 10px;
         }
 
+        .date {
+            font-size: xx-small;
+            color: gray; /* Optional: To visually distinguish dates */
+        }
+
+        .title-date {
+            justify-content: space-between; /* Align title and date at opposite ends */
+            align-items: center; /* Vertically center the title and date */
+            margin: 5px 0; /* Optional: space between each div */
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+        }
+
     </style>
 
  </head>
@@ -187,10 +200,26 @@
         <img src="writing.png" id="writingImage" alt="writing" width="50px">
         <p>
             
-            <!-- <a href="nostupidquestions">No stupid questions</a> -->
-            <a href="airquality">Air quality in Delhi</a>
-            <a href="attachment">Attachment</a>
-            <a href="caffeine" style="margin-bottom: 3px;">Caffeine</a>
+            <!-- <div class="title-date">
+                <a href="nostupidquestions">No stupid questions</a>
+                <span class="date">1/6/25</span> 
+            </div> -->
+
+            <div class="title-date">
+                <a href="airquality">Air quality in Delhi</a>
+                <span class="date">11/22/24</span> 
+            </div>
+
+            <div class="title-date">
+                <a href="attachment">Attachment</a>
+                <span class="date">10/1/24</span> 
+            </div>
+
+            <div class="title-date">
+                <a href="caffeine" style="margin-bottom: 3px;">Caffeine</a>
+                <span class="date">9/1/24</span> 
+            </div>
+
             <!-- <span class="days-links">
                 <a href="august21">Aug 21st</a>, 
                 <a href="august13">Aug 13th</a>,
@@ -198,12 +227,31 @@
                 <a href="july20">July 20th</a>,
                 <a href="july16">July 16th</a> 
             </span><br> -->
-            <a href="runclubs">Run clubs in NYC/BK</a>
+            <div class="title-date">
+                <a href="runclubs">Run clubs in NYC/BK</a>
+                <span class="date">6/3/24</span>
+            </div>
             <!-- <a href="graduation">Graduation</a> -->
-            <a href="finance">Personal finance spiel</a>
-            <a href="22">22 things learned at (almost) 22</a>
-            <a href="cycles">The menstrual cycle</a>
-            <a href="mechanism">Mechanism design</a>
+            
+            <div class="title-date">
+                <a href="finance">Personal finance spiel</a>
+                <span class="date">4/12/24</span>
+            </div>
+
+            <div class="title-date">
+                <a href="22">22 things learned at (almost) 22</a>
+                <span class="date">3/26/24</span>
+            </div>
+
+             <div class="title-date">
+                <a href="cycles">The menstrual cycle</a>
+                <span class="date">3/21/24</span>
+            </div>
+            
+            <div class="title-date">
+                <a href="mechanism">Mechanism design</a>
+                <span class="date">3/21/24</span>
+            </div>
         </p>
            
             
