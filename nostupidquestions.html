@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No stupid questions</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>No stupid questions</h2>
+            <h4>1/6/25</h4>
+            <p>
+
+            
+            Happy new year. I'm still in holiday mode so I've been using my brain in spurts. 
+            These are those spurts. 
+
+            <br><br>
+
+            <i>What’s Raynaud's phenomenon?</i>
+
+            <br><br>
+                
+            I have a wonderful condition called Raynaud's phenomenon, which means my hands 
+            go blue and numb in cold weather. Or when I hold something cold. Or when I wash 
+            my hands in cold water. This makes running in the cold painful. So I run in 
+            the warm parts of the year and lift in the cold. The problem is that I impulsively signed up for
+            two half marathons this year and the first one is in February. 
+
+            <br><br>
+                
+            Raynaud’s is named after French medical student Maurice Raynaud who described it 
+            in 1862.
+            When we’re cold, our bodies redirect the blood from our fingers and toes to 
+            important organs. Raynauds is an exaggerated response. If normal finger blood 
+            vessels constrict a little, mine clamp down and stop blood flow in what’s called a 
+            vasospastic attack.
+
+            <br><br>
+
+            Some of the causes are using a jackhammer, an autoimmune disease, or my 
+            favorite, being assigned female at birth. To side track, women are 
+            
+            <a href="https://www.washingtonpost.com/wellness/2024/02/09/women-men-cold-sensitivity/">generally</a> 
+            
+            colder 
+            than men because they have less muscle mass and thus a lower metabolic rate. 
+            Treatments are staying warm. 
+
+            <br><br>       
+                
+            I have no idea how the races will go. 
+
+            <br><br>
+            
+            <div style="text-align: center;">
+                <img src="raynauds1.jpg" width="140px">
+                <img src="raynauds2.jpg" width="140px">
+                <img src="raynauds3.jpg" width="140px">
+            </div>
+
+            <br><br>
+
+            <i>How does the gas nozzle know when to stop?</i>
+            
+            <br><br>
+
+            I was at a Costco gas station when I wondered about this. It's fairly straightforward.
+            Imagine putting your finger on the other end of a straw. 
+            The entire straw loses air and clamps shut. This is similar. 
+            The gas nozzle has a small pipe next to it called a venturi. 
+            When the end of the venturi touches the liquid gas, it chokes off the 
+            air pressure that keeps the handle open and shuts off gas flow.
+
+            <br><br>
+           
+            <i>How did MRI scans get faster?</i>
+           
+            <br><br>
+
+            I went to a Bengali holiday party recently and met a statistics PhD student 
+            from Stanford who explained compressed sensing to me in a corner,
+            which made me miss college. We started with MRI scans. 
+            Traditional MRI scans used to detect tumors in toddlers took 45 minutes, 
+            which is too long for a toddler to stay still. So researchers needed to find a way to 
+            speed up the process. Instead of looking for the tumor by going pixel by pixel or 
+            using any other deterministic method, they found that randomly sampling the image 
+            was the fastest solution. Through some fancy math we can also find the minimum 
+            number of pixels or lines to randomly sample to definitively find (or not find) a tumor.
+            The point is that simple random sampling is the best. But a lot of people, maybe myself 
+            included, don't truly understand what randomness is. 
+
+            <br><br>
+
+            <i>Why do we like sugar so much?</i>
+
+            <br><br>
+
+            When I’m in California, my mom and I somehow end up at Starter Bakery every Sunday. 
+            I walked past this bakery every day during my last semester at college, but never went 
+            in because I was off baked goods and sugar and general happiness. One day I got her an 
+            olive bread loaf and she told me it was the best bread she’s ever eaten, which made us 
+            regular Sunday customers. Yesterday we went when everything was sold out and 
+            she picked a passionfruit madeleine and a Kouign Amann (pronounced Queen Amaan). 
+            I hadn’t eaten lunch so I gave in to the passionfruit madeline. And oh my god. 
+            Insanity. Which got me thinking about sugar. 
+
+            <br><br>
+
+            The evolutionary reason why humans are so attracted to sugar is because fruits were 
+            less accessible than vegetables way back when. They were up on the trees while vegetables 
+            could be found on the ground. And since they had so much energy, whoever 
+            could get fruit was at an evolutionary advantage. The problem is that sugar is 
+            available everywhere now, but our attraction to it exists, so we overconsume it. 
+            If I ate the passionfruit madeleine everyday, I’d hate it by the end of the week. 
+            But the fact that I ate it once and most likely won’t for a while makes it memorable. 
+            We value what isn’t readily available.
+            
+            <br><br>
+
+            Which brings me to the holidays. Back in suburban California, 
+            life isn’t as run-run-run as it is in New York. It’s slow. The people are familiar. 
+            I spent so many years wanting to leave this place for something greener. Turns out 
+            nowhere’s greener. I just wanted to escape myself. I went on a walk this morning 
+            in the neighborhood - 57 degrees, a little foggy, chilly for California - and realized 
+            this is it. There’s nothing anywhere else that could be better right now. Maybe 
+            it’s Eckhart Tolle, or maybe I’ve fled home enough to learn that better things 
+            don’t exist elsewhere. I mean, maybe they do. Maybe I could be in Paris. Maybe 
+            I could be in a cafe. But I’ll be at sea everywhere. Looking for a corner everywhere. 
+            So might as well enjoy the sea. 
+
+            <br><br>
+
+            <i>How do you write better?</i>
+
+            <br><br>
+
+            This is from William Zissner's <i>On Writing Well</i>. Try to get your point across in
+            as little words as possible. Read good writing. Rewrite. Then rewrite again. Don't use adverbs 
+            that mean the same thing as the noun after them, i.e. don't say you quickly ran. You ran, it implies
+            quickness. Or she screamed loudly. Look for the extra words you use. You didn't help out, you helped.
+            Instead of “at the present time we are experiencing precipitation,” say “it’s raining.”
+
+            <br><br>
+
+            In action:
+
+            <br><br>
+
+            picked up much more speed <br> 
+            picked up <s>much</s> more speed | works without the “much” <br>
+            picked up <s>much more</s> speed | also works without the “much more”<br>
+            <s>picked up much more speed</s> sped up 
+
+            <br><br>
+
+            The task of good writing is to get the reader to the next sentence. 
+            Make sure each sentence is playing a role.
+            Be yourself when you write. "Never say anything in writing you wouldn’t comfortably say 
+            in conversation.” Lastly, the only way to learn to write is to force 
+            yourself to produce a certain number of words on a regular basis.
+
+            <br><br>
+
+            That being said, I hope to write consistently this year. Cheers.
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2024 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script src="nostupidqs.js"></script>
+
+</body>
+</html>
