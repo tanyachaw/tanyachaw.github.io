@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>Sleep</h2>
+            <h4>1/13/25</h4>
+            <p>
+                
+
+         
+
+            
+       
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2025 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script src="sleep.js"></script>
+
+</body>
+</html>
