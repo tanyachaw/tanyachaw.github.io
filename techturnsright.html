@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech turns right</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>Tech turns right</h2>
+            <h4>1/15/25</h4>
+            <p>
+            A few weeks ago, I drove in the rain to a 
+            <a href="https://www.sffc.party/">San Francisco Freedom Club</a>
+            holiday party. Eoghan McCabe, CEO of Intercom,  and his team released the location an hour 
+            before the party’s time - the San Francisco Mint. The dress code was cocktail dresses 
+            for women and suits for men. Wine and cocktails overflowed, a giant charcuterie 
+            board with mini forks had cubed dragon fruit and cheese, hot dogs were served around 
+            10, and in the midst, I spotted a boy walking around with an American flag and MAGA hat.
+            <br><br>
+
+            The Daily just covered Big Tech’s 
+            <a href="https://www.nytimes.com/2025/01/13/podcasts/the-daily/big-techs-trump-andreessen.html">move</a> to the right, which made me think back to this 
+            night. I had no political conversations that night, but an undertone was in the air, 
+            which we acknowledged over free drinks. The club is not promoted to be political, but to 
+            celebrate “freedom, America, technology, capitalism, humanity, merit and growth.” <br><br>
+
+            I grew up in the Bay Area, my parents worked in tech, and I didn’t speak to a Republican 
+            until college, where they were a minority. My high school principal got fired when he 
+            hosted a rally during class hours in our football field to scream “Fuck Trump!” I assumed 
+            everyone in a 100-mile radius from me to be a Democrat; the standard, non-problematic, 
+            moral way to be. <br><br>
+
+            Silicon Valley has been a democratic haven for decades. A 2019 
+            <a href="https://escholarship.org/uc/item/99c3d0pn">study</a> 
+            found that tech 
+            entrepreneurs support many liberal policies - same-sex marriage, abortion, gun control, 
+            taxation, redistribution, universal healthcare, climate change - except one: regulation. 
+            <br><br>
+
+            While Obama was 
+            <a href="https://www.nytimes.com/2016/10/30/magazine/barack-obama-brought-silicon-valley-to-washington-is-that-a-good-thing.html">friends</a>
+            with the tech world, Joe Biden was not. Biden appointed 
+            Lina Khan to chair the FTC and Gary Gensler to chair SEC, both aggressive regulators, 
+            to crack down on big tech through antitrust and crypto regulations. During his 2020 
+            campaign trail, Biden was vocal about big tech’s power growing too large and spoke 
+            about protecting consumers and competition. Biden didn’t invite Elon Musk to a white 
+            house summit about the future of electric cars in the US, which soured their relationship. 
+            Jeff Skoll, former president of eBay who contributed $645,600 to Biden’s campaign in 2020, 
+            wrote a long angry 
+            <a href="https://x.com/jeffskoll/status/1812098856617730355">tweet</a>
+            about Biden purposefully leaving out Tesla because it wasn’t unionized.<br><br>
+
+            Marc Andreessen, a serious name in tech, coined a concept called “the deal.” 
+            A deal between tech entrepreneurs and society. A tech founder would start a company, 
+            get very rich, create jobs, pay their taxes, and at the end of their life, 
+            when they had a giant sum of money, they would donate all their money to philanthropy. 
+            That washes away your sins and reclassifies you as a “suspect business mogul” to a 
+            “virtuous philanthropist.” And meanwhile, the press loves you, you get invited to Davos, 
+            all the dinner parties, Warren Buffet loves you, and it’s all great. But in the past 
+            ten years, Andreessen found that his deal was broken. <br><br>
+
+            He saw that better economic outcomes became evil, technology became evil, 
+            and philanthropy became evil. He cites when Zuckerberg and Chan pledged 99% of their 
+            ownership in facebook to philanthropy to be met with backlash over doing it to get a 
+            tax break. Now that this deal wasn’t working, he had to reconsider his politics and 
+            place in society. Which is when he turned to Trump. <br><br>
+
+            Andreessen went golfing with Trump in Jersey, ate meat, wined and dined, 
+            and was assured that he would be allowed to do what he wants with startups. 
+            He also publicly declared that he will stop the crackdown on cryptocurrency and 
+            regulation. Andreessen and Horowitz formally endorsed Trump for his support behind 
+            “little tech.” <br><br>
+
+            And it’s not only Andreessen. Elon Musk, Mark Zuckerberg, Sam Altman, Dara Khosrowshahi, 
+            and Jeff Bezos are skipping the World Economic Forum summit in Switzerland to attend 
+            Trump’s inauguration next Monday. Tim Cook, Satya Nadella, and Sundar Pichai have each 
+            donated a million dollars to Trump’s inaugural fund (his fund is at $170 million so far, 
+            compared to Biden’s $62 million, and 2016 Trump’s $107 million.) <br><br>
+
+            Ripple donated $5 million, Uber $1 million, Robinhood $2 million, Perplexity AI $1 million, 
+            Coinbase $1 million, Intuit $1 million, Goldman Sachs $1 million, just to name a few. 
+            We’ll get a full list after 90 days of inauguration. <br><br>
+
+            Last week, Facebook stopped fact-checking because as per Mark, it led to 
+            “too much censorship.” The Times 
+            <a href="https://www.nytimes.com/live/2025/01/07/business/meta-fact-checking">wrote</a> 
+            that gone are the days when Mark appeared 
+            in a suit and tie apologizing in front of Congress. Now he is seen with longer hair 
+            and gold chains hunting. <br><br>
+
+            We can also see the Trump embrace in 
+            <a href="https://www.forbes.com/sites/stephenpastis/2024/10/29/here-are-the-biggest-moments-from-trumps-bro-podcast-tour-ahead-of-joe-rogan-appearance/">bro-y</a>
+            podcasts. Trump talked to Joe Rogan, 
+            Andrew Schulz, Mark Calaway, Theo Von, and Logan Paul, to name a few, about rap beefs, 
+            diss tracks, fights, and alcohol addictions. Trump’s granddaughter Kai is a vlogger 
+            now and gets questions from Elon Musk in her q&as. <br><br>
+
+            At the party, I spoke to a broken-hearted computer vision PhD student, 
+            a husband and wife who worked in cybersecurity, dads, a founder who made a laptop 
+            with no blue light, someone from India who told me they were from the “best city” 
+            of India but refused to tell me the city, a man in finance who didn’t like his work 
+            but realized that “providing” is more important than enjoying work, a German PhD 
+            student who I made a hot dog for, and others I can’t remember. No one fit the 
+            mold of any political party. I irish-exited the Mint to drive home with low 
+            tire pressure in the pouring rain. 
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2025 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script src="techturnsright.js"></script>
+
+</body>
+</html>
