@@ -15,10 +15,10 @@
         body {
             text-align: center;
             margin: 0;
-            background-color: rgb(172, 168, 159);
+            background-color: rgb(255, 255, 255);
             opacity: 0;
             transition: opacity 2s ease;
-            color: white;
+            color: rgb(0, 0, 0);
             
         }   
 
@@ -108,9 +108,13 @@
             margin-left: 50px;
         }
 
-        a {
+        /* a {
             color: rgb(249, 240, 158)
-        }
+        } */
+
+        a {
+            color: rgb(133, 103, 244)
+        } 
 
         button {
             background: white;
@@ -143,7 +147,7 @@
 <body>
     <header>
         <a href="https://tanyachaw.github.io/">
-            <img class="header-default" src="header white.png" alt="Tanya Chawla" id="headerImage">
+            <img id="headerImage" class="header-default" src="header.png" alt="Tanya Chawla">
             <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
         </a>
     </header>
@@ -151,7 +155,7 @@
     <main>
         <button id="button1" onclick="dark()">dark mode</button> <br><br> 
         
-        <img src="headshot 7.jpg" alt="A picture of me" width="250" style="margin-top: 10px; ; border: 1px solid rgb(255, 255, 255);">
+        <img src="headshot 7.jpg" alt="A picture of me" width="250" style="margin-top: 10px; border-radius: 12px; box-shadow: 0 4px 12px rgba(130, 129, 129, 0.483);">
 
         <div class="introduction">
             <p>
