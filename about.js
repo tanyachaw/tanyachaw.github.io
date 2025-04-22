@@ -9,7 +9,7 @@ function dark() {
  
     if (body.style.backgroundColor === 'black') {
      // Switch to light mode
-     body.style.backgroundColor = 'rgb(208, 163, 197)';
+     body.style.backgroundColor = 'rgb(172, 168, 159)';
      body.style.color = 'white';
      button.textContent = 'dark mode'; // Update button text
  
