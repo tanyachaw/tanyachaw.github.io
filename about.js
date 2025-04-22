@@ -9,8 +9,9 @@ function dark() {
  
     if (body.style.backgroundColor === 'black') {
      // Switch to light mode
-     body.style.backgroundColor = 'rgb(172, 168, 159)';
-     body.style.color = 'white';
+     body.style.backgroundColor = 'rgb(255, 255, 255)';
+     body.style.color = 'black';
+     headerImage.src = 'header.png';
      button.textContent = 'dark mode'; // Update button text
  
      links.forEach(link => {
@@ -19,6 +20,7 @@ function dark() {
  
      } else {
  
+     headerImage.src = 'header white.png';
      body.style.backgroundColor = 'black';
      body.style.color = 'white';
      button.textContent = 'light mode';
