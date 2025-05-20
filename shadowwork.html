@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow work</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>Shadow work</h2>
+            <h4>5/20/25</h4>
+            <p>
+                Some life updates: I ran the 
+                <a href="https://youtu.be/WVHgOGlMNaU?si=kzQlJ3ms29BR5kk0">Brooklyn half marathon</a>, 
+                <a href="https://youtu.be/48vvYanWNug?si=Tfcf_J-my1ADh3gn">cold plunged</a> for 18 minutes, 
+                ran 
+                <a href="https://youtu.be/yAKVhbZ1rzk?si=vWRnRrDT0iSw0Z1G">Bay to Breakers</a> and 
+                made videos about all of it. 
+                I resurrected my YouTube self. I discovered Carl Jung and my ego is bruised. <br><br>
+
+                I’ve been reading about Jung's concept of the shadow. Before we get into it, 
+                you must believe that there is a conscious and an unconscious mind. The conscious mind 
+                consists of our thoughts. We can hear it. The unconscious mind can’t be heard, it’s deeper 
+                and hidden, but it shapes our emotions, habits and beliefs. <br><br>
+
+                <i></i>“Until you make the unconscious conscious, it will direct your life and you will call it fate.” - Jung </i> <br><br>
+
+                Humans are made up, broadly, of two parts – light and dark.  <br><br>
+
+                The light includes everything we aren’t terrified to admit about ourselves - 
+                our hardworking nature, dislike of certain foods, attention to detail, attunement 
+                to emotions, street smartness, ability to empathize with others etc. The dark 
+                includes things that are so suppressed that we don’t consciously know they are a 
+                part of us. Maybe our desire for destruction, violence, sex and power; our judgemental, 
+                envious side; our vulnerability; our coldness; our warmth; our self-reliance; our 
+                competitiveness. The dark is not all bad. It’s just the parts we disowned to 
+                survive as children. This is our shadow.  <br><br>
+
+                If the shadow isn’t recognized, it comes out in intense moments. 
+                A random flash of rage. A cheating scandal. Crying spells after something 
+                that wasn’t supposed to make you cry. Times where you lose control. <br><br>
+
+                Before I go on, I wanted to reflect on childhood as a whole. Alain 
+                de Botton says childhood is jail. We idealize it later, but my god, we’re small 
+                and weak and dependent on other imperfect humans for so long, we have no 
+                sense that things could be different. Every little thing that goes wrong 
+                feels like death. Louise Glück has a quote I think about often.  <br><br>
+
+                <i>“We look at the world once, in childhood. The rest is memory.” - Gluck</i>
+
+                I interpret this in two ways. One, we take our beliefs about the world 
+                solidified in childhood to the grave. Two, we spend our entire lives 
+                projecting what we remember from childhood onto the people we meet as adults. 
+                Back to the shadow. <br><br>
+
+                Why did we let go of certain traits as children? In childhood, 
+                some things we did were frowned upon. If we were too loud and told to be 
+                quiet by our caretakers, then we shunned that loud, attention-craving part of 
+                us in a dark room of our psyche and became soft spoken. If we were met with
+                 disgust if we cried or showed emotion as a kid, then we disowned our emotional 
+                 side and became hyper-stoic. <br><br>
+
+                This isn’t ours or our parents’ fault - although they are 
+                easy to blame - it’s simply fact. Our parents have shadows of their 
+                own that their parents gave them. So before we go into this, we must 
+                not blame anyone. Not our parents, our circumstances nor ourselves.  <br><br>
+
+                Now, how do we figure out what parts of ourselves we disowned to 
+                survive as kids?<br><br>
+
+                The most dead giveaway is who we’re naturally attracted to. 
+                Who we feel a ridiculous pull towards, for no conscious reason. 
+                I.e. If someone asks us to list traits we like about them, we can’t think 
+                of much. The traits this person embodies are traits we’ve disowned within 
+                ourselves.<br><br>
+                
+                On the flip side, the people who bring up strong negative emotions in us. 
+                Hatred, disgust, strong judgment. We have probably disowned something they 
+                have within themselves. I.e. If we “don’t like” person X, we must stop and 
+                ask what we do not like about them. We probably want that back in ourselves. <br><br>
+                
+                Then there are dreams, which Jung believed were arenas of the unconscious. 
+                They bring messages. Keep a dream journal and see what type of emotions your 
+                dreams are constantly bringing up. I’m doing this too, particularly when 
+                I have strong emotional dreams. They usually point to events in unresolved 
+                negative events in childhood.<br><br>
+
+                The first and most important step of shadow work is to recognize the ugliest 
+                parts of ourselves. What’s on the dark edge of our “light traits?” We 
+                could be creative but irrational. Accommodating to others but self-abandoning. 
+                Disciplined but rigid. Caring/nurturing but controlling. Independent 
+                but afraid of intimacy. Funny but avoiding pain. <br><br>
+
+                The answers will be very painful. And at first the ego will do 
+                everything to be in denial. If you’re resisting any I statement, 
+                like “I am XYZ,” your level of resistance will indicate how likely 
+                it is to be in your shadow. For example, if saying “I am emotionally needy” 
+                causes your ego to start fist-fighting you, you are likely emotionally needy. 
+                Or a barrage of other statements - I am lazy, controlling, 
+                codependent, addicted to validation, power-hungry, selfish, 
+                manipulative, resentful, bitter, a victim, afraid of intimacy, 
+                unlovable, vain, jealous, weak, or ashamed of my desires. Just see 
+                which one you fiercely deny. <br><br>
+
+                These truths suck. I don’t like doing this work. It actively 
+                reconceptualizes who I think I am, my ego defends itself vigorously 
+                and there’s a tug of war in my brain for a while, but with time, each 
+                harsh truth gets digested. And then I can work with it. <br><br>
+
+                The more we recognize, accept and integrate our shadow, 
+                the more we will become whole. This is a lifelong process 
+                Jung called individuation. <br><br>
+
+                The most beautiful part about this process is that it cannot 
+                be done alone. It usually requires another person, the embodiment 
+                of your shadow in many cases, to come and fuck your life up. 
+                Crisis. SOS. Then in the aftermath, you realize that it wasn’t 
+                about them, but about what they represented in your psyche. 
+                It is simply a message. Take it or leave it. If you leave it, 
+                it’ll happen again, in another form. <br><br>
+
+                Good luck. <br><br>
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2025 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script src="sleep.js"></script>
+
+</body>
+</html>
