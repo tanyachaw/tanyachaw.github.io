@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enantiodromia</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>Enantiodromia</h2>
+            <h4>7/24/25</h4>
+            <p>
+                I write from Berlin. I spent five stimulating but tiring solo travel days in Venice which means now all I’m capable of is sitting in cafes. <br><br>
+
+                I’ve wanted to write about a concept called Enantiodromia for a while, which means that sooner or later, everything turns into its opposite. In Ancient Greek, Enantios means “opposite” and dromos means “running course.”
+                <br><br>
+                Heraclitus was one of the first to coin it, a solitary Greek philosopher who believed the universe was always becoming, never being. He believed in change, in everything being in constant flux (which opposes Parmenides’ view that everything is fixed) and in the unity of opposites. 
+                <br><br>
+                He wrote, “cold things warm, warm things cool, wet things dry and parched things get wet.”
+                <br><br>
+                Carl Jung was a huge fan of it, calling it the most marvelous of psychological laws, and applied this concept to individual psychology as well as the broader world. If a person develops an extreme, one-sided conscious tendency, in time, the unconscious builds up the counterposition. 
+                <br><br>
+                A very warm person turns very cold. A corporate CEO turns into a starving artist. A former Rhodes scholar comes out as gay in midlife and moves to Thailand for sex parties and alcoholism. For Jung’s concept of individuation (becoming whole as an individual), Enantiodromia refers to the process where one seeks opposing qualities in order to feel complete. 
+                <br><br>
+                For example, after I ran the Brooklyn half marathon, I spent the rest of the day in hedonism – checking into the Bowery, putting on a dress, getting wine drunk and getting dinner at Bungalow. 
+                <br><br>
+                In nature, when one force dominates, its counter emerges. Decomposition creates soil for growth. An abundance of prey causes predators to overhunt, and then starve, leaving room for the prey population to revive again. Periods of economic or social instability often lead to strongman waves, the Weimar Republic to Hitler, Biden to Trump, Manmohan Singh to Modi. Ramadan’s long days of fasting lead to the abundant feast of Eid. Consumerism leads to minimalism. Moral purity leads to moral corruption. Tyranny leads to rebellion. Hyper-connectivity leads to isolation. 
+                <br><br>
+                Convenience leads to purposeful struggle - think of why Europe doesn’t have a huge workout culture. They walk everywhere! Compare that to California, where driving is big, and look at the surge of pilates, soulcycle, running, hiking etc. SF - one of the world’s most tech-driven cities - is also one of the most wellness-obsessed. Pastimes are plunge parties, biohacking events, wellness shots. 
+                <br><br>
+                Europeans have a different relationship to pleasure - they spend time staring at swans, eating gelato or sweets, drinking and smoking a bunch. Workout gear in public and whoop bands are less common. A pro is moderation, a con is slower innovation and less urgency which can lead to complacency. 
+                <br><br>
+                The US (SF or NYC) is about optimization. Hustle, grind, disrupt, track. Joe Rogan. Naval. Modern Wisdom. Alex Hormozi. Long working hours, hyper-productivity, endless stimulation. All of this excess produces a counter - run clubs, intense yoga classes, ultramarathons, gym culture. A pro is ambition and economic innovation, a con is burnout, obsessive tracking, and manufacturing balance because it isn’t built into daily life. 
+                <br><br>
+                Germany literally runs on trust. There isn’t any ticket checker. Anyone can step on and the government just assumes you bought a ticket. Sometimes there are random checks, but mostly, nothing. This makes it very easy to cheat the German government, but I’ve found that every time I take the train, guilt forces me to buy a ticket. Hence if you make it very easy for someone to commit a crime, and assume they won’t because you trust them, they likely won’t commit the crime. 
+                <br><br>
+                What I’m trying to make a case for is letting life take its natural rhythm. It’s tough to make a full case for it, considering my fear that if I let go, everything will fall apart. The Silicon Valley push mindset is still encoded in me. But here’s the thing - there are seasons where we push - where all we do is wake up and ache for the first sip of celsius so we can cross off the 17 things on our to-do list. Then there are seasons where we wake up and people watch for three hours over five courses with no real plan for what’s to come. Both are needed to not subconsciously veer towards the opposite extreme.
+                <br><br>
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2025 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="writing">Writing</a>
+        </div> 
+    </footer>
+
+    <script src="sleep.js"></script>
+
+</body>
+</html>
