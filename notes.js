@@ -14,7 +14,7 @@ function dark() {
      body.style.backgroundColor = 'white';
      body.style.color = 'black';
      headerImage.src = 'header.png'; // Replace with your light mode header image path
-     writingImage.src = 'writing.png';
+     writingImage.src = 'notes_transparent.png';
      button.textContent = 'dark mode'; // Update button text
  
      links.forEach(link => {
@@ -27,7 +27,7 @@ function dark() {
      body.style.color = 'white';
      headerImage.src = 'header white.png'
      button.textContent = 'light mode';
-     writingImage.src = 'writing-white.png';
+     writingImage.src = 'notes_white_transparent.png';
  
      links.forEach(link => {
          link.style.color = 'rgb(249, 240, 158)'; // Set dark mode link color
