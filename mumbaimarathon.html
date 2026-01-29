@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Mumbai Marathon</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            opacity: 0;
+            transition: opacity 2s ease;
+            min-height: 100vh;
+        }   
+
+
+        header {
+                text-align: center;
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
+            }
+
+            header a {
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
+            }
+
+            header a img {
+                max-width: 300px; /* Adjust image size as needed */
+                height: auto;
+                display: block;
+            }
+
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
+            }
+
+            header a img.header-yellow {
+                opacity: 0; /* Hide the yellow image initially */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+
+        main {
+            flex-grow: 1;
+        }
+
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
+
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        .under {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the viewport height as needed */
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            margin-top: -10vh;
+        }
+
+        .left, .right {
+            display: inline-block;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
+
+        article {
+            max-width: 480px; /* Or a suitable max width for your design */
+            margin: 0 auto; /* Center the article */
+            padding: 0 20px; /* Small padding to ensure text doesn't touch the edges */
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+        }  
+
+        .pics{
+            margin-bottom:20px;
+            text-align: center;
+        } 
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* CSS rules for smaller screens */
+            article {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+ </head>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/">
+            <img class="header-default" src="header.jpg" alt="Tanya Chawla" id="headerImage">
+            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button> 
+        
+        <article>
+            <h2>Tata Mumbai Marathon</h2>
+            <h4>1/29/26</h4>
+            <p>
+                I ran the Mumbai Marathon on January 18th. It was the most painful day of my life. <br><br>
+
+This was my first marathon. At mile 17, I texted my mom telling her that I wanted to quit. I didn’t train optimally in Delhi’s AQI, didn’t acclimatize to Mumbai’s climate, my IT band flared up halfway, and my mind was screaming at me to stop and DNF.
+<br><br>
+I limped-ran to my mom and she made me sit down and have some electrolytes. On the plastic chair, watching all the runners in neon pass by, I couldn’t control my tears. Seeing me try to hide my tears, a lady offered me pain relief spray, coconut water and dates. Other runners checked in and a physiotherapist made me stretch my left leg out. Then an old man came up and said a line that changed the moment for me - “you’re not quitting, walk if you need to, but finish.”
+<br><br>
+I got up and started run-walking. My left knee wouldn’t bend, and I had no idea how I’d push through 9 miles with an injury, but I started and kept going. So many runners checked in, sprayed my knee or gave me gels. A runner ran with me to the finish line, distracting me from the pain. I finished seeing my mom with a huge poster. I technically ran alone, but finished it because of my mom and the many people of Bombay. 
+<br><br>
+After I got my medal, a banana, electrolytes and other goods, I limped while my mom called a cab. Later that day, I sat on my hotel room floor, icing both my calves, crying. The sobs were heavy, filled with relief, pain and awe. I won’t forget that moment. 
+<br><br>
+I overrode my perfectionism and the voice in my head telling me to stop at mile 17 to complete an imperfect marathon. Had I quit midway through the race, I might have felt relief for a bit, and no one would have cared, but I would have had to live with that for the rest of my life. Regardless of whether anyone else knew, I would’ve. 
+<br><br>
+I’ve been through my fair share of tough times, but this day of voluntary suffering took away power from that scared voice in my head. Right now, I’m in a transit week, about to start a new life in a new city, and it’s daunting. But whenever I start freaking out about anything, I think back to the night before the marathon in the hotel, where I was so nervous I couldn’t speak, and still pinned my bib, showed up at the start line, and finished. No other challenge really compares. 
+<br><br>
+Rather than being discouraged from running marathons, I’m more energized to recover properly and train better for the next one. I need to add strength training to avoid injury, run consistently, fuel properly and get better sleep. When you throw yourself in the deep end of the pool underprepared, the worst thing that can happen is drowning, and the best is lots of learning. I luckily got the latter. 
+<br><br>
+
+<div style="text-align: center;">
+    <img src="marathon.JPG" alt="" width="400">
+</div>
+
+            </p>
+        </article>
+    </main>
+    
+
+
+    <footer>
+        <div class="left"> 
+            &copy; 2026 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <a href="about">About</a> |  
+            <a href="work">Work</a> |
+            <a href="notes">Notes</a>
+        </div> 
+    </footer>
+
+    <script src="sleep.js"></script>
+
+</body>
+</html>
