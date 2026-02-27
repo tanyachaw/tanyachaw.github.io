@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     
     <style>
@@ -111,14 +112,14 @@
                 top: 80px;
                 left: -70px;
                 width: 55px; /*64px;*/
-                transform: rotate(1deg);
+                transform: rotate(0deg);
             }
 
             .overlay-images a:nth-child(3) { /* about */
                 top: 18px;
                 right: -80px;
                 width: 50px; /*70px;*/
-                transform: rotate(4deg);
+                transform: rotate(0deg);
             }
 
             /* Hover Effect */
@@ -152,6 +153,44 @@
             opacity:0.6;
         }
 
+        .site-title-link {
+            text-decoration: none;
+            color: inherit;
+            }
+
+        .site-title {
+            /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; */
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-align: center;
+            margin: 2px 0 8px;
+            transition: color 0.1s ease;
+            }
+
+        .site-title-link:hover .site-title {
+            color: #febd1f; 
+            }
+
+        .work {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            text-align: center;
+            }
+
+        .circle-links a {
+            text-decoration: none;
+            color: #000;
+            }
+
+        .circle-links a:hover {
+            color: #ffffff;
+            }
+
 
    </style>
 
@@ -166,9 +205,8 @@
     </script>
 <body>
     <header>
-        <a href="https://tanyachaw.github.io/">
-            <img id="headerImage" class="header-default" src="header.jpg" alt="Tanya Chawla">
-            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        <a href="https://tanyachaw.github.io/" class="site-title-link">
+            <h1 class="site-title">Tanya Chawla</h1>
         </a>
     </header>
 
@@ -178,18 +216,21 @@
         <div class="image-container">
             <img class="orange-ball-image" src="orange ball.png" alt="Orange Ball Image">
             <div class="overlay-images">
+                <div class="circle-links">
                 <a href="work">
-                    <img class="work-image default" src="work.png" alt="Work Image">
-                    <img class="work-image white" src="work-white.png" alt="Work Image White">
+                    <h1 class="work">Work</h1>
                 </a>
                 <a href="notes">
-                    <img class="writing-image default" src="notes_transparent.png" alt="Writing Image">
-                    <img class="writing-image white" src="notes_white_transparent.png" alt="Writing Image White">
+                    <h1 class="work">Notes</h1>
+                    <!-- <img class="writing-image default" src="notes_transparent.png" alt="Writing Image">
+                    <img class="writing-image white" src="notes_white_transparent.png" alt="Writing Image White"> -->
                 </a>
                 <a href="about">
-                    <img class="about-image default" src="about.png" alt="About Image">
-                    <img class="about-image white" src="about-white.png" alt="About Image White">
+                    <h1 class="work">About</h1>
+                    <!-- <img class="about-image default" src="about.png" alt="About Image">
+                    <img class="about-image white" src="about-white.png" alt="About Image White"> --> 
                 </a>
+                </div>
             </div>
         </div>
         
