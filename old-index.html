@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Chawla</title>
+
+    <link rel="icon" href="favicon.ico?v=20231218" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <style>
+      /* General Styles */
+            body {
+                text-align: center;
+                margin: 0;
+                background-color: #ffffff; /* White background */
+                opacity: 0;
+                transition: opacity 2s ease;
+            }
+
+            header {
+                text-align: center;
+                padding-top: 40px;
+                position: relative; /* Ensure header is the positioning context */
+                display: inline-block; /* Adjust to fit the content */
+            }
+
+            header a {
+                display: block;
+                position: relative; /* Make the link the positioning context */
+            }
+
+            header a img {
+                max-width: 300px;
+                height: auto;
+                transition: opacity 0.2s ease; /* Smooth transition between images */
+            }
+
+            header a img.header-default {
+                position: relative; /* Keep default image positioned normally */
+                z-index: 1; /* Place it above the yellow image initially */
+            }
+
+            header a img.header-yellow {
+                position: absolute; /* Overlay yellow image directly on top */
+                top: 0;
+                left: 0;
+                z-index: 0; /* Place it behind initially */
+                opacity: 0; /* Start with the yellow image hidden */
+            }
+
+            header a:hover img.header-default {
+                opacity: 0; /* Hide the black image on hover */
+            }
+
+            header a:hover img.header-yellow {
+                opacity: 1; /* Show the yellow image on hover */
+            }
+
+            /* Image Container */
+            .image-container {
+                max-width: 400px; /* Adjust as needed */
+                margin: 20px auto; /* Center the container and add spacing */
+                position: relative;
+            }
+
+            .orange-ball-image {
+                max-width: 400px;
+                margin-top: 50px;
+            }
+
+            /* Overlay Images */
+            .overlay-images {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            .overlay-images a {
+                position: absolute;
+                display: block;
+            }
+
+            /* Default images */
+            .overlay-images img.default {
+                width: 100%; /* Ensure images take up the entire anchor */
+            }
+
+            /* Hover images */
+            .overlay-images img.white {
+                display: none; /* Hide white images initially */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /* Ensure images take up the entire anchor */
+            }
+
+            /* Set specific positions for each image */
+            .overlay-images a:nth-child(1) { /* work */
+                top: -60px;
+                right: 20px;
+                width: 48px;/*85px;*/
+                transform: rotate(0deg);
+            }
+
+            .overlay-images a:nth-child(2) { /* writing */
+                top: 80px;
+                left: -70px;
+                width: 55px; /*64px;*/
+                transform: rotate(0deg);
+            }
+
+            .overlay-images a:nth-child(3) { /* about */
+                top: 18px;
+                right: -80px;
+                width: 50px; /*70px;*/
+                transform: rotate(0deg);
+            }
+
+            /* Hover Effect */
+            .overlay-images a:hover img.default {
+                opacity: 0; /* Fade out the default image on hover */
+            }
+
+            .overlay-images a:hover img.white {
+                display: block; /* Ensure the white image is visible */
+                opacity: 1; /* Fade in the white image on hover */
+            }
+
+            /* Footer */
+            footer {
+                font-family: 'DM Mono', monospace;
+                margin-top: auto; /* This pushes the footer to the bottom */
+                padding: 10px;
+                font-size: 10px;
+            }
+
+            button {
+            background: white;
+            font-size: 10px;
+            font-family: 'DM Mono', monospace;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:5px;
+        }
+
+        button:hover {
+            opacity:0.6;
+        }
+
+        .site-title-link {
+            text-decoration: none;
+            color: inherit;
+            }
+
+        .site-title {
+            /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; */
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-align: center;
+            margin: 2px 0 18.5px;
+            transition: color 0.1s ease;
+            }
+
+        .site-title-link:hover .site-title {
+            color: #febd1f; 
+            }
+
+        .work {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            text-align: center;
+            }
+
+        .circle-links a {
+            text-decoration: none;
+            color: #000;
+            }
+
+        .circle-links a:hover {
+            color: #ffffff;
+            }
+
+
+   </style>
+
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B5NDV3RY6');
+    </script>
+<body>
+    <header>
+        <a href="https://tanyachaw.github.io/" class="site-title-link">
+            <h1 class="site-title">Tanya Chawla</h1>
+        </a>
+    </header>
+
+    <main>
+        <button id="button1" onclick="dark()">dark mode</button>
+     
+        <div class="image-container">
+            <img class="orange-ball-image" src="orange ball.png" alt="Orange Ball Image">
+            <div class="overlay-images">
+                <div class="circle-links">
+                <a href="work">
+                    <h1 class="work">Work</h1>
+                </a>
+                <a href="notes">
+                    <h1 class="work">Notes</h1>
+                    <!-- <img class="writing-image default" src="notes_transparent.png" alt="Writing Image">
+                    <img class="writing-image white" src="notes_white_transparent.png" alt="Writing Image White"> -->
+                </a>
+                <a href="about">
+                    <h1 class="work">About</h1>
+                    <!-- <img class="about-image default" src="about.png" alt="About Image">
+                    <img class="about-image white" src="about-white.png" alt="About Image White"> --> 
+                </a>
+                </div>
+            </div>
+        </div>
+        
+    
+    </main>
+
+    <footer>
+        &copy; 2026 Tanya Chawla
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+

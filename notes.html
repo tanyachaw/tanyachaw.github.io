@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     
     <style>
         body {
@@ -151,6 +153,7 @@
             border-radius: 5px;
             cursor: pointer;
             margin-right:5px;
+            margin-top: 2.5px;
         }
 
         button:hover {
@@ -168,12 +171,37 @@
 
         .title-date {
             justify-content: space-between; /* Align title and date at opposite ends */
-            align-items: center; /* Vertically center the title and date */
+            /* align-items: center; /* Vertically center the title and date */
             margin: 5px 0; /* Optional: space between each div */
             font-family: 'DM Mono', monospace;
             font-size: 12px;
             line-height: 1.5;
         }
+
+        .site-title {
+            /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; */
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-align: center;
+            margin: 50px 0px 10px 0px;
+            transition: color 0.1s ease;
+            }
+
+            .dark-mode .site-title {
+                color: rgb(255, 255, 255); /* or white if you prefer */
+            }
+
+        .site-title-link:hover .site-title {
+            color: #febd1f; 
+            }
+
+        .site-title-link {
+            text-decoration: none;
+            color: inherit;
+            }
 
     </style>
 
@@ -188,9 +216,8 @@
     </script>
 <body>
     <header>
-        <a href="https://tanyachaw.github.io/">
-            <img id="headerImage" class="header-default" src="header.jpg" alt="Tanya Chawla">
-            <img class="header-yellow" src="header-yellow.png" alt="Tanya Chawla Yellow">
+        <a href="https://tanyachaw.github.io/" class="site-title-link">
+            <h1 class="site-title">Tanya Chawla</h1>
         </a>
     </header>
 
@@ -198,7 +225,7 @@
 
         <button id="button1" onclick="dark()">dark mode</button> <br><br>
 
-        <img src="notes_transparent.png" id="writingImage" alt="writing" width="50px">
+       <!--  <img src="notes_transparent.png" id="writingImage" alt="writing" width="50px"> -->
         <p>
             <div class="title-date">
                 <a href="mumbaimarathon">Tata Mumbai Marathon</a>
@@ -330,7 +357,7 @@
         </div>
 
         <div class="right">
-            <a href="about">About</a> |  
+            <a href="index">About</a> |  
             <a href="work">Work</a> |
             <a href="notes">Notes</a>
         </div> 

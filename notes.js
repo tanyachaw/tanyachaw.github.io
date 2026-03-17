@@ -6,31 +6,42 @@ function dark() {
     const body = document.body;
     const button = document.querySelector('#button1');
     const headerImage = document.getElementById('headerImage');
-    const links = document.querySelectorAll('a');
     const writingImage = document.getElementById('writingImage');
- 
+    const links = document.querySelectorAll('a');
+    document.body.classList.toggle('dark-mode');
+
     if (body.style.backgroundColor === 'black') {
-     // Switch to light mode
-     body.style.backgroundColor = 'white';
-     body.style.color = 'black';
-     headerImage.src = 'header.png'; // Replace with your light mode header image path
-     writingImage.src = 'notes_transparent.png';
-     button.textContent = 'dark mode'; // Update button text
- 
-     links.forEach(link => {
-         link.style.color = ''; // Reset to default (or initial CSS)
-     });
- 
-     } else {
- 
-     body.style.backgroundColor = 'black';
-     body.style.color = 'white';
-     headerImage.src = 'header white.png'
-     button.textContent = 'light mode';
-     writingImage.src = 'notes_white_transparent.png';
- 
-     links.forEach(link => {
-         link.style.color = 'rgb(249, 240, 158)'; // Set dark mode link color
-     });
-     }
- }
+        body.style.backgroundColor = 'white';
+        body.style.color = 'black';
+        button.textContent = 'dark mode';
+
+        if (headerImage) {
+            headerImage.src = 'header.png';
+        }
+
+        if (writingImage) {
+            writingImage.src = 'notes_transparent.png';
+        }
+
+        links.forEach(link => {
+            link.style.color = '';
+        });
+
+    } else {
+        body.style.backgroundColor = 'black';
+        body.style.color = 'white';
+        button.textContent = 'light mode';
+
+        if (headerImage) {
+            headerImage.src = 'header white.png';
+        }
+
+        if (writingImage) {
+            writingImage.src = 'notes_white_transparent.png';
+        }
+
+        links.forEach(link => {
+            link.style.color = 'rgb(249, 240, 158)';
+        });
+    }
+}

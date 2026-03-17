@@ -10,48 +10,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Jost&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-      /* General Styles */
-            body {
-                text-align: center;
-                margin: 0;
-                background-color: #ffffff; /* White background */
-                opacity: 0;
-                transition: opacity 2s ease;
-            }
+        body {
+            text-align: center;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+            opacity: 0;
+            transition: opacity 2s ease;
+            color: rgb(0, 0, 0);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            
+        }   
 
-            header {
+
+        header {
                 text-align: center;
-                padding-top: 40px;
-                position: relative; /* Ensure header is the positioning context */
-                display: inline-block; /* Adjust to fit the content */
+                padding-top: 24.8px; 
+                position: relative; 
+                display: inline-block; 
+                height: 100px;
             }
 
             header a {
-                display: block;
-                position: relative; /* Make the link the positioning context */
+                position: relative; 
+                display: inline-block;
+                line-height: 0; /* Remove any extra space around images */
             }
 
             header a img {
-                max-width: 300px;
+                max-width: 300px; /* Adjust image size as needed */
                 height: auto;
-                transition: opacity 0.2s ease; /* Smooth transition between images */
+                display: block;
             }
 
-            header a img.header-default {
-                position: relative; /* Keep default image positioned normally */
-                z-index: 1; /* Place it above the yellow image initially */
+            header a img.header-default,
+            header a img.header-yellow {
+                position: absolute; 
+                top: 0;
+                left: 50%; /* Center the images horizontally */
+                transform: translateX(-50%); /* Center the images horizontally */
+                transition: opacity 0.2s ease; 
             }
 
             header a img.header-yellow {
-                position: absolute; /* Overlay yellow image directly on top */
-                top: 0;
-                left: 0;
-                z-index: 0; /* Place it behind initially */
-                opacity: 0; /* Start with the yellow image hidden */
+                opacity: 0; /* Hide the yellow image initially */
             }
 
             header a:hover img.header-default {
@@ -62,85 +68,59 @@
                 opacity: 1; /* Show the yellow image on hover */
             }
 
-            /* Image Container */
-            .image-container {
-                max-width: 400px; /* Adjust as needed */
-                margin: 20px auto; /* Center the container and add spacing */
-                position: relative;
-            }
+        img { 
+            max-width: 300px;
+            height: auto;
+            top: 30px;
+        }
 
-            .orange-ball-image {
-                max-width: 400px;
-                margin-top: 50px;
-            }
+        .headshot {
+            max-width: 200px;
+        }
 
-            /* Overlay Images */
-            .overlay-images {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-            }
+        .introduction{
+            margin-top: 20px;
+            margin-left: 400px; /* Set your desired left margin */
+            margin-right: 400px;
+            min-width: 200px; /* Set your desired minimum width */
+            max-width: 450px;
+            margin: 0 auto;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+            font-family: 'Jost', sans-serif;
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+        }
 
-            .overlay-images a {
-                position: absolute;
-                display: block;
-            }
+        footer {
+            font-family: 'DM Mono', monospace;
+            margin-top: auto; /* This pushes the footer to the bottom */
+            padding: 10px;
+            font-size: 10px;
+        }
 
-            /* Default images */
-            .overlay-images img.default {
-                width: 100%; /* Ensure images take up the entire anchor */
-            }
+        .left, .right {
+            display: inline-block;
+        }
 
-            /* Hover images */
-            .overlay-images img.white {
-                display: none; /* Hide white images initially */
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%; /* Ensure images take up the entire anchor */
-            }
+        .left {
+            text-align: left;
+            margin-right: 50px;
+        }
 
-            /* Set specific positions for each image */
-            .overlay-images a:nth-child(1) { /* work */
-                top: -60px;
-                right: 20px;
-                width: 48px;/*85px;*/
-                transform: rotate(0deg);
-            }
+        .right {
+            text-align: right;
+            margin-left: 50px;
+        }
 
-            .overlay-images a:nth-child(2) { /* writing */
-                top: 80px;
-                left: -70px;
-                width: 55px; /*64px;*/
-                transform: rotate(0deg);
-            }
+        /* a {
+            color: rgb(249, 240, 158)
+        } */
 
-            .overlay-images a:nth-child(3) { /* about */
-                top: 18px;
-                right: -80px;
-                width: 50px; /*70px;*/
-                transform: rotate(0deg);
-            }
+        a {
+            color: rgb(133, 103, 244)
+        } 
 
-            /* Hover Effect */
-            .overlay-images a:hover img.default {
-                opacity: 0; /* Fade out the default image on hover */
-            }
-
-            .overlay-images a:hover img.white {
-                display: block; /* Ensure the white image is visible */
-                opacity: 1; /* Fade in the white image on hover */
-            }
-
-            /* Footer */
-            footer {
-                font-family: 'DM Mono', monospace;
-                margin-top: auto; /* This pushes the footer to the bottom */
-                padding: 10px;
-                font-size: 10px;
-            }
-
-            button {
+        button {
             background: white;
             font-size: 10px;
             font-family: 'DM Mono', monospace;
@@ -153,20 +133,43 @@
             opacity:0.6;
         }
 
+        #button1 {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+            margin-bottom: -15px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            }
+
+            .social-icons img {
+            width: 14px;
+            height: 14px;
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+            }
+
+            .social-icons img:hover {
+            opacity: 1;
+            }
+
         .site-title-link {
             text-decoration: none;
             color: inherit;
             }
 
         .site-title {
-            /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
             font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
             font-size: 48px;
             font-weight: 700;
             letter-spacing: -0.03em;
             text-align: center;
-            margin: 2px 0 8px;
+            margin: 50px 0px 10px 0px;
             transition: color 0.1s ease;
             }
 
@@ -174,28 +177,15 @@
             color: #febd1f; 
             }
 
-        .work {
-            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; 
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: -0.03em;
-            text-align: center;
+            .dark-mode .site-title {
+                color: rgb(255, 255, 255); /* or white if you prefer */
             }
+            
 
-        .circle-links a {
-            text-decoration: none;
-            color: #000;
-            }
+    </style>
 
-        .circle-links a:hover {
-            color: #ffffff;
-            }
-
-
-   </style>
-
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
+ </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B5NDV3RY6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -211,38 +201,50 @@
     </header>
 
     <main>
-        <button id="button1" onclick="dark()">dark mode</button>
-     
-        <div class="image-container">
-            <img class="orange-ball-image" src="orange ball.png" alt="Orange Ball Image">
-            <div class="overlay-images">
-                <div class="circle-links">
-                <a href="work">
-                    <h1 class="work">Work</h1>
-                </a>
-                <a href="notes">
-                    <h1 class="work">Notes</h1>
-                    <!-- <img class="writing-image default" src="notes_transparent.png" alt="Writing Image">
-                    <img class="writing-image white" src="notes_white_transparent.png" alt="Writing Image White"> -->
-                </a>
-                <a href="about">
-                    <h1 class="work">About</h1>
-                    <!-- <img class="about-image default" src="about.png" alt="About Image">
-                    <img class="about-image white" src="about-white.png" alt="About Image White"> --> 
-                </a>
-                </div>
-            </div>
-        </div>
+        <button id="button1" onclick="dark()">dark mode</button> <br><br> 
         
-    
+        <img src="shot3.jpg" alt="A picture of me" width="250" style="margin-top: 10px;">
+
+        <div class="introduction">
+            <p>
+                <br>
+                I'm an associate producer at WNYC. Before that, I produced audio at The Washington Post and Radiolab, and studied
+                data science at UC Berkeley.
+                <br><br> 
+                I built this site from scratch, the code for it is on my <a href="https://github.com/tanyachaw">github</a>.
+                I can be reached at tanyachawla at berkeley dot edu. 
+                <br>
+
+                <p style="font-size:9px;">I copied the font above from a <a href="https://aintnormalcafe.com/">
+                    cafe</a> I like.</p>
+
+                    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/tanyachaw/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+  </a>
+
+  <a href="https://www.strava.com/athletes/80883669" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/strava.svg" alt="Strava">
+  </a>
+</div>
+            
+            </p>
+        </div>
     </main>
 
     <footer>
-        &copy; 2026 Tanya Chawla
+        <div class="left"> 
+            &copy; 2026 Tanya Chawla
+        </div>
+
+        <div class="right">
+            <!-- <a href="about">About</a> |  -->
+            <a href="work">Work</a> |
+            <a href="notes">Notes</a>
+        </div> 
     </footer>
 
-    <script src="index.js"></script>
+    <script src="notes.js"></script>
 
 </body>
 </html>
-
